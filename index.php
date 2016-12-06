@@ -156,7 +156,7 @@ and open the template in the editor.
                             </div>
                                 <div class="col-xs-6">
                                 Alter viertes Kind <input type="number" class="form-control children_age room_1_children_4">                        
-                            </div>
+                            </div> 
                             
                              <a href="javascript:void(0)" class="btn btn-default btn-fab" id="close_room"><i class="glyphicon glyphicon-plus"></i></a>
                             
@@ -200,24 +200,63 @@ and open the template in the editor.
         
         
         <div class="container-fluid widget_tab" id="rooms">
-        
-            
-                <div class="row">
-                    
-                    
-                     <div class="col-sm-8 ">
+ 
+                         
+            <div class="jumbotron col-xs-12 no-padding" id="room_1">
                         
-                        roooms there bajsdlkfjasöldkfja ösdlkfjasd
-                        fa sjdkfa
+                <div class="col-sm-4 no-padding">
+                    <img src="img/room.jpg" class="img-responsive" >
+                </div>
+                <div class="col-sm-8">
+                    <h2>Double Deluxe Room</h2>
+                    <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus. 
+                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu. 
+                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit. 
+                        Nulla molestie congue enim eu placerat. </div>
+                   
+                </div>
+                <div class="col-sm-12">
+                    <h3>Details</h3>
+                    <table border="0" width="100%" cellspacing="0" cellpadding="0" class="details_table">
+                        <tr>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Wi-Fi
+                            </td>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Klima
+                            </td>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Safe
+                            </td>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Balkon
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Bademantel
+                            </td>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Baby Bett möglich
+                            </td>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Haar Fön
+                            </td>
+                            <td>
+                                <i class="glyphicon glyphicon-ok"></i> Haupthaus
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                
+                <a href="javascript:void(0)" class="btn btn-raised btn-lg details" >details</a>
+                <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book" >Buchen</a>
+                
+            </div>
                         
-                       
-                        
-                    </div>
                     
-                    
-                    
-                </div>       
-       
+                 
         </div>
         
         

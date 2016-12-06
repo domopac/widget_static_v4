@@ -16,7 +16,7 @@
 
 
 
-/* jumbotron for display room-1, room-2... */
+/* jumbotron for display select adults children age for rooms  */
 .widget_tab {
     display:none;
 }
@@ -97,12 +97,29 @@
     box-shadow: none!important;
 }
 
+/* rooms in step 2 */
+
+.details, .book {
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    margin:0px;
+}
+.details {
+    right:150px;
+}
+
+.details_table td {
+    width:25%;
+    line-height:40px;
+}
+
 
 
 
 
 .no-padding {
-    padding:0px;
+    padding:0px!important;
 }
 
 
