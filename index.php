@@ -65,7 +65,7 @@ and open the template in the editor.
         <div class="row">
 
             <div class="col-xs text-center" id="summary">
-                <span id="rooms">1</span><span id="person">2</span><span id="kinder"></span><span id="fromDate"></span><span id="toDate"></span>
+                <span id="summary_rooms">1</span><span id="summary_person">2</span><span id="summary_kinder"></span><span id="summary_fromDate"></span><span id="summary_toDate"></span>
             </div>
         </div>
 
@@ -209,65 +209,65 @@ and open the template in the editor.
 
 
 
-        <div class="container-fluid widget_tab" id="rooms">
+    <div class="container-fluid widget_tab" id="rooms">
 
 
-            <div class="jumbotron col-xs-12 no-padding" id="room_1">
+        <div class="jumbotron col-xs-12 no-padding" id="room_1">
 
-                <div class="col-sm-4 no-padding">
-                    <img src="img/room.jpg" class="img-responsive" >
-                                            </div>
-                <div class="col-sm-8">
-                    <h2>Double Deluxe Room</h2>
-                    <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                        Nulla molestie congue enim eu placerat. </div>
+            <div class="col-sm-4 no-padding">
+                <img src="img/room.jpg" class="img-responsive" >
+            </div>
+            <div class="col-sm-8">
+                <h2>Double Deluxe Room</h2>
+                <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                    Nulla molestie congue enim eu placerat. </div>
 
-                   <a href="javascript:void(0)" class="btn btn-raised btn-lg details_btn" >Details</a>
-                                                    </div>
-                <div class="col-xs-12 details">
-                    <h3>Details</h3>
-                    <div class="accordion">
+                <a href="javascript:void(0)" class="btn btn-raised btn-lg details_btn" >Details</a>
+            </div>
+            <div class="col-xs-12 details">
+                <h3>Details</h3>
+                <div class="accordion">
                     <h3>Bed and Breakfast</h3>
-                        <div>
-                            <div class="col-sm-9">First content panel
-                                First content panel
+                    <div>
+                        <div class="col-sm-9">First content panel
+                            First content panel
                             First content panel
 
 
-                                                </div>
-                            <div class="col-sm-3">
-                               <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
-                                            </div>
-                                                    </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
+                        </div>
+                    </div>
                     <h3>Half Board</h3>
                     <div>
                         <div>First content panel
-                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
-                                                </div>
-                                            </div>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
+                        </div>
+                    </div>
                     <h3>Full Board</h3>
                     <div>
                         <div>First content panel
-                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-
-
-                                                    </div>
-
-
-
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
 
 
 
