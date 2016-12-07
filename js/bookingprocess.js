@@ -48,6 +48,7 @@ function daySelected($day) {
         uiDayRang.toCalDayElement = $day;
     }
     $("#summary").trigger("update");
+    $("#calendar").trigger("update-cal-range")
 }
 
 function buildLabel(prefix, value) {
