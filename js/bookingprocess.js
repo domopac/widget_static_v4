@@ -40,12 +40,15 @@ function daySelected($day) {
     $("#summary").trigger("update");
 }
 
+function buildLabel(prefix, numberOfRooms) {
+    return numberOfRooms > 0 ? prefix+numberOfRooms : '';
+}
 function summaryUpdated() {
-    $('#rooms').text(bookingRequest.numberOfRooms());
-    $('#persons').text(bookingRequest.numberOfPersons());
-    $('#kinder').text(bookingRequest.numberOfKinder());
-    $('#fromDate').text(bookingRequest.fromDate);
-    $('#toDate').text(bookingRequest.toDate);
+    $('#rooms').text(buildLabel("Rooms:",bookingRequest.numberOfRooms()));
+    $('#persons').text(buildLabel("Persons:",bookingRequest.numberOfPersons()));
+    $('#kinder').text(buildLabel("Kinder:",bookingRequest.numberOfKinder()));
+    $('#fromDate').text(buildLabel("from:",bookingRequest.fromDate));
+    $('#toDate').text(buildLabel("to:",bookingRequest.toDate));
 }
 /**
  * Created by rifaccio on 06/12/2016.
