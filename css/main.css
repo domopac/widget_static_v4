@@ -63,6 +63,9 @@
 .margin-bottom {
     margin-bottom:10px;
 }
+.margin-top {
+    margin-top:10px;
+}
 
 .label-adults, .label-children, .user {  
     display:inline;
@@ -99,24 +102,27 @@
 
 /* rooms in step 2 */
 
-.details, .book {
-    position:absolute;
-    bottom:20px;
-    right:20px;
-    margin:0px;
-}
 .details {
-    right:150px;
+   padding:30px;
 }
 
-.details_table td {
-    width:25%;
-    line-height:40px;
+.book_btn {
+   float:right;
 }
 
 
 
-
+.ui-accordion .ui-accordion-content {
+    padding:1em 1em 5em 1em;
+    overflow: hidden;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border:#009688 1px solid;
+    background: #009688;
+}
+.ui-accordion .ui-accordion-header {
+    padding: 1em .5em 1em .7em;
+}
 
 .no-padding {
     padding:0px!important;
@@ -201,4 +207,20 @@
 
 .Bs-Btn--selected:hover {
     background: #ffe013;
+}
+
+
+
+/* media queries */
+
+@media (max-width:767px) {
+    .navbar-nav li {
+        width:100%;
+    }
+    .navbar-nav {
+        margin:0px;
+    }
+    .progress {
+        display: none;
+    }
 }

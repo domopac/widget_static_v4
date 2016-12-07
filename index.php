@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
-
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <!-- Material Design fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -30,9 +30,17 @@ and open the template in the editor.
         
         
          <div class="container-fluid">
-        <div class="bs-component">
+        
+            
           <div class="navbar navbar-default">
-           
+                 <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                 
+                </div>
               <div class="navbar-collapse collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#calendar"><i class="glyphicon glyphicon-calendar"></i> Kalender</a></li>
@@ -46,7 +54,7 @@ and open the template in the editor.
          <div class="progress">
             <div class="progress-bar" style="width: 25%"></div>
           </div>
-        </div>
+        
          </div>
         
         
@@ -114,8 +122,16 @@ and open the template in the editor.
                                 Alter viertes Kind <input type="number" class="form-control children_age room_1_children_4">                        
                             </div>
                             
+                            <div class="col-xs-12 margin-top">
+                                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised">Buchen</a>
+                                <fieldset disabled="">
+                                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised">Buchen</a>
+                                </fieldset>
+                            </div>
+                            
                              <a href="javascript:void(0)" class="btn btn-raised btn-primary" id="add_room"><i class="glyphicon glyphicon-plus"></i></a>
                             
+                             
                         </div>
                         
                         
@@ -213,45 +229,45 @@ and open the template in the editor.
                         Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu. 
                         Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit. 
                         Nulla molestie congue enim eu placerat. </div>
-                   
+                     
+                   <a href="javascript:void(0)" class="btn btn-raised btn-lg details_btn" >Details</a>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-xs-12 details">
                     <h3>Details</h3>
-                    <table border="0" width="100%" cellspacing="0" cellpadding="0" class="details_table">
-                        <tr>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Wi-Fi
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Klima
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Safe
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Balkon
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Bademantel
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Baby Bett möglich
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Haar Fön
-                            </td>
-                            <td>
-                                <i class="glyphicon glyphicon-ok"></i> Haupthaus
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="accordion">
+                    <h3>Bed and Breakfast</h3>
+                        <div>
+                            <div class="col-sm-9">First content panel
+                                First content panel
+                            First content panel
+                            
+                            
+                            </div>
+                            <div class="col-sm-3">
+                               <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>    
+                            </div>    
+                        </div>
+                    <h3>Half Board</h3>
+                    <div>
+                        <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
+                        </div>
+                    </div>
+                    <h3>Full Board</h3>
+                    <div>
+                        <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen</a>
+                        </div>
+                    </div>
+                  </div>
                 </div>
                 
+                   
                 
-                <a href="javascript:void(0)" class="btn btn-raised btn-lg details" >details</a>
-                <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book" >Buchen</a>
+                
+                
+                
+                
                 
             </div>
                         
@@ -275,6 +291,8 @@ and open the template in the editor.
         
         <!-- jquery  -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> 
+        <!-- jquery ui -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <!-- bootstrap  -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
         
@@ -287,6 +305,10 @@ and open the template in the editor.
             $.material.init();
 
             $("#calendar").show(400);
+            
+            $( ".accordion" ).accordion({
+                collapsible: true
+            });
     </script>
         
         
