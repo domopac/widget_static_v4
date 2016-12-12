@@ -23,5 +23,14 @@ $(document).ready(function(){
        }
     });
     
+    
+    // info_btn opens the room_board section
+    $(".info_btn").on("click",function() {       
+        if( $(this).parents(".room").siblings().find(".room_board").hasClass("yo")) {
+        $(this).parents(".room").siblings().find(".room_board").slideUp().removeClass("yo"); 
+        }
+        $(this).parents(".room").find(".room_board").slideToggle().addClass("yo");
+    });
+    
 });
 
