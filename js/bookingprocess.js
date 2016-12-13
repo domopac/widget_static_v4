@@ -1,19 +1,16 @@
 function BookingRequest() {
-    this.fromDate = '';
-    this.toDate = '';
     this.personsAge = ['18', '18'];
     this.childrenAge = [];
+    this.numberOfRooms = 1;
+    this.fromDate = '';
+    this.toDate = '';
 
     this.numberOfPersons = function () {
         return this.personsAge.length;
     }
-    this.numberOfRooms = function () {
-        return this.personsAge.length;
-    }
     this.numberOfKinder = function () {
-        return 0;
+        return this.childrenAge.length;
     }
-
 
     this.resetDates = function () {
         this.fromDate = '';
@@ -21,34 +18,49 @@ function BookingRequest() {
     };
 
     this.twoDateSelected = function () {
-        return this.fromDate && this.toDate;
+        return this.fromDate.trim() != '' && this.toDate.trim() != '';
     };
 }
 
+function UiDayRange() {
+    this.fromCalDayElement = null;
+    this.toCalDayElement = null;
+    this.reset = function () {
+        this.fromCalDayElement = null;
+        this.toCalDayElement = null;
+    }
+}
+
+var uiDayRange = new UiDayRange();
 var bookingRequest = new BookingRequest();
 
 
 function daySelected($day) {
     if (bookingRequest.twoDateSelected()){
         bookingRequest.resetDates();
+        uiDayRang.reset();
     }
     if (bookingRequest.fromDate){
+        uiDayRang.toCalDayElement = $day;
         bookingRequest.toDate = $day.attr('aria-label')
     } else {
         bookingRequest.fromDate = $day.attr('aria-label');
+        uiDayRang.toCalDayElement = $day;
     }
     $("#summary").trigger("update");
+    $("#calendar").trigger("update-cal-range")
 }
 
-function buildLabel(prefix, numberOfRooms) {
-    return numberOfRooms > 0 ? prefix+numberOfRooms : '';
+function buildLabel(prefix, value) {
+    valueStr = value+'';
+    return valueStr.trim() != '0' && valueStr.trim() != '' ? prefix + valueStr.trim() : '';
 }
 function summaryUpdated() {
-    $('#rooms').text(buildLabel("Rooms:",bookingRequest.numberOfRooms()));
-    $('#persons').text(buildLabel("Persons:",bookingRequest.numberOfPersons()));
-    $('#kinder').text(buildLabel("Kinder:",bookingRequest.numberOfKinder()));
-    $('#fromDate').text(buildLabel("from:",bookingRequest.fromDate));
-    $('#toDate').text(buildLabel("to:",bookingRequest.toDate));
+    $('#summary_rooms').text(buildLabel("Rooms:",bookingRequest.numberOfRooms));
+    $('#summary_persons').text(buildLabel("Persons:",bookingRequest.numberOfPersons()));
+    $('#summary_kinder').text(buildLabel("Kinder:",bookingRequest.numberOfKinder()));
+    $('#summary_fromDate').text(buildLabel("from:",bookingRequest.fromDate));
+    $('#summary_toDate').text(buildLabel("to:",bookingRequest.toDate));
 }
 /**
  * Created by rifaccio on 06/12/2016.
@@ -56,4 +68,5 @@ function summaryUpdated() {
 $(document).ready(function(){
     $(".DayPicker-Day").click(function(){daySelected($(this))});
     $("#summary").on("update", function(){summaryUpdated()});
+    $("#summary").trigger("update");
 });

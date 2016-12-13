@@ -81,10 +81,10 @@ and open the template in the editor.
 
     <div class="row">
         
-        <div class="col-md-8 ">
+        <div class="col-md-8 col-xs-12">
  
 
-            <div class="jumbotron col-xs-12">
+            <div class="jumbotron ">
 
 
                 <!-- calendar html -->
@@ -100,25 +100,25 @@ and open the template in the editor.
 
 
 
-        <div class="col-md-4" id="all_rooms">
+        <div class="col-md-4 col-xs-12" id="all_rooms">
 
             <div class="jumbotron" id="room_1_data">
                 
                 <div class="calendar_accordion">
+                    
+                    
                     <h3 >Zimmer 1</h3>
                     <div>
-
-               
 
                 <div class="col-xs-6 margin-bottom">
                    
                         <div class="form-group">
-                          <label for="adults_count">Erwachsene</label>
-                          <select id="adults_count" class="form-control">
+                          <label for="room_1_adults_count">Erwachsene</label>
+                          <select id="room_1_adults_count" class="form-control">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="3">3</option>
+                            <option value="4">4</option>
                           </select>
                         </div>
                     
@@ -127,12 +127,12 @@ and open the template in the editor.
                 <div class="col-xs-6 margin-bottom">
                     
                         <div class="form-group">
-                          <label for="children_count">Kinder</label>
-                          <select id="children_count" class="form-control">
+                          <label for="room_1_children_count">Kinder</label>
+                          <select id="room_1_children_count" class="form-control">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="3">3</option>
+                            <option value="4">4</option>
                           </select>
                         </div>
                     
@@ -146,7 +146,7 @@ and open the template in the editor.
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="3">3</option>
+                            <option value="4">4</option>
                           </select>
                     </div>
                 </div>
@@ -158,7 +158,7 @@ and open the template in the editor.
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="3">3</option>
+                            <option value="4">4</option>
                           </select>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ and open the template in the editor.
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="3">3</option>
+                            <option value="4">4</option>
                           </select>
                     </div>
                 </div>
@@ -180,19 +180,181 @@ and open the template in the editor.
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+                    
+                    
+                    <h3 >Zimmer 2</h3>
+                    <div>
+
+                <div class="col-xs-6 margin-bottom">
+                   
+                        <div class="form-group">
+                          <label for="room_2_adults_count">Erwachsene</label>
+                          <select id="room_2_adults_count" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
                             <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                    
+                </div>
+
+                <div class="col-xs-6 margin-bottom">
+                    
+                        <div class="form-group">
+                          <label for="room_2_children_count">Kinder</label>
+                          <select id="room_2_children_count" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                    
+                </div>
+
+
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_2_children_1_age">Alter des Kindes</label>
+                          <select id="room_2_children_1_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                           </select>
                     </div>
                 </div>
                 
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_2_children_2_age">Alter des Kindes</label>
+                          <select id="room_2_children_2_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_2_children_2_age">Alter des Kindes</label>
+                          <select id="room_2_children_2_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_2_children_2_age">Alter des Kindes</label>
+                          <select id="room_2_children_2_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+                    
+                    
+                     <h3 >Zimmer 3</h3>
+                    <div>
 
-                <div class="col-xs-12 margin-top">
-                    <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised">Buchen</a>          
+                <div class="col-xs-6 margin-bottom">
+                   
+                        <div class="form-group">
+                          <label for="room_3_adults_count">Erwachsene</label>
+                          <select id="room_3_adults_count" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                    
+                </div>
+
+                <div class="col-xs-6 margin-bottom">
+                    
+                        <div class="form-group">
+                          <label for="room_3_children_count">Kinder</label>
+                          <select id="room_3_children_count" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+                    
                 </div>
 
 
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_3_children_1_age">Alter des Kindes</label>
+                          <select id="room_3_children_1_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
+                
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_3_children_2_age">Alter des Kindes</label>
+                          <select id="room_3_children_2_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_3_children_2_age">Alter des Kindes</label>
+                          <select id="room_3_children_2_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-group">
+                          <label for="room_3_children_2_age">Alter des Kindes</label>
+                          <select id="room_3_children_2_age" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                    </div>
+                </div>
             </div>
+                    
+                    
+                    
             </div>
+                
+                <a href="javascript:void(0)" class="is-focused" id="add_room"><i class="glyphicon glyphicon-plus"></i> Zimmer hinzufügen</a>
+                    <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg">Buchen</a>          
+              
+
+                
             </div>
             
             
@@ -215,10 +377,10 @@ and open the template in the editor.
 
         <div class="jumbotron col-xs-12 no-padding room" id="room_1">
 
-            <div class="col-sm-3 no-padding">
+            <div class="col-sm-12 col-md-6  col-lg-4 img-container">
                 <img src="img/room.jpg" class="img-responsive" >
             </div>
-            <div class="col-sm-9">
+            <div class="col-sm-12 col-md-6 col-lg-8">
                 <div class="col-xs-12">
                     <h2 class="room_name">Double Deluxe Room</h2>
                     <div class="room_icons">
@@ -251,19 +413,19 @@ and open the template in the editor.
                     Nulla molestie congue enim eu placerat. 
                         </div>
                         <div class="col-sm-3">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 323€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
                         </div>
                     </div>
                     <h3>Half Board</h3>
                     <div>
                         <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 450€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
                         </div>
                     </div>
                     <h3>Full Board</h3>
                     <div>
                         <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 513€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
                         </div>
                     </div>
                 </div>
@@ -272,7 +434,7 @@ and open the template in the editor.
         
         <div class="jumbotron col-xs-12 no-padding room" id="room_2">
 
-            <div class="col-sm-3 no-padding">
+            <div class="col-sm-3 img-container">
                 <img src="img/bath.jpg" class="img-responsive" >
             </div>
             <div class="col-sm-9">
@@ -308,19 +470,19 @@ and open the template in the editor.
                     Nulla molestie congue enim eu placerat. 
                         </div>
                         <div class="col-sm-3">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 323€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
                         </div>
                     </div>
                     <h3>Half Board</h3>
                     <div>
                         <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 450€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
                         </div>
                     </div>
                     <h3>Full Board</h3>
                     <div>
                         <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 513€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
                         </div>
                     </div>
                 </div>
@@ -330,7 +492,7 @@ and open the template in the editor.
         
         <div class="jumbotron col-xs-12 no-padding room" id="room_3">
 
-            <div class="col-sm-3 no-padding">
+            <div class="col-sm-3 img-container">
                 <img src="img/bath.jpg" class="img-responsive" >
             </div>
             <div class="col-sm-9">
@@ -366,19 +528,19 @@ and open the template in the editor.
                     Nulla molestie congue enim eu placerat. 
                         </div>
                         <div class="col-sm-3">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 323€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
                         </div>
                     </div>
                     <h3>Half Board</h3>
                     <div>
                         <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 450€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
                         </div>
                     </div>
                     <h3>Full Board</h3>
                     <div>
                         <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn" >Buchen um 513€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
                         </div>
                     </div>
                 </div>
@@ -424,10 +586,19 @@ and open the template in the editor.
     
     $("select").dropdown({ "autoinit" : ".select" });
 
-    $( ".accordion, .calendar_accordion" ).accordion({
+    $( ".accordion" ).accordion({
         collapsible: true,
-        active: false
+        active: false,
+        heightStyle: "content"
     });
+    
+     $( ".calendar_accordion" ).accordion({
+        collapsible: true,
+        active: 0,
+        heightStyle: "content"
+    });
+    
+    
 </script>
 
 

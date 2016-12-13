@@ -24,7 +24,12 @@
     color:#fff!important;
     background:#C62828!important;
 }
-
+.is-focused *, .is-focused {
+    color:#C62828!important;       
+}
+.is-focused .form-control {
+    background-image: linear-gradient(#C62828, #C62828), linear-gradient(#D2D2D2, #D2D2D2)!important;
+}
 
 /* jumbotron for display select adults children age for rooms  */
 .widget_tab {
@@ -32,28 +37,6 @@
 }
 
 
-.adults_count, .children_count {
-    color:rgba(0,0,0, 0.87);
-    position: relative;
-    float: left;
-    border: none;
-    border-radius: 2px;
-    padding: 8px 25px;
-    font-size: 14px;
-    font-weight: 500;
-    display: inline;
-}
-
-.children_age {
-    width:75px;
-    line-height: 35px;
-    text-align: center;
-    margin: 0px 10px 0 10px;
-}
-
-.btn-group {
-    margin:15px 15px 15px 0;
-}
 
 .form-group, .form-control {
     display: inline;
@@ -63,11 +46,6 @@
     position: relative;
 }
 
-.jumbotron h3 {
-    margin-top:5px!important;
-    margin-bottom:15px!important;
-}
-
 .margin-bottom {
     margin-bottom:10px;
 }
@@ -75,8 +53,13 @@
     margin-top:10px;
 }
 
-.label-adults, .label-children, .user {  
-    display:inline;
+.calendar_accordion {
+    margin-bottom: 15px;
+}
+
+#add_room {
+    display: block;
+    margin-bottom:15px;
 }
 
 
@@ -111,14 +94,13 @@
 }
 
 
+
 .ui-accordion .ui-accordion-content {
     padding:1em 1em 5em 1em;
     overflow: hidden;
 }
 
-.calendar_accordion .ui-accordion-content {
-    padding:0;
-}
+
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     border-bottom:1px solid #c5c5c5;
     color: #454545;
@@ -139,11 +121,9 @@
 .ui-widget-content {
     border:none;
 }
-
-
-
-
-
+.img-container {
+    padding:0px;
+}
 
 .no-padding {
     padding:0px!important;
