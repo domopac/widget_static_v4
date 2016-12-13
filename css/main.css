@@ -57,15 +57,33 @@
     margin-bottom: 15px;
 }
 
-#add_room {
+#summary span {
+    margin-right: 5px;
+}
+
+#add_room.is-focused, #add_room.is-focused .glyphicon{
+    color: #93c763!important;
+}
+#add_room.is-focused {
     display: block;
     margin-bottom:15px;
 }
 
+#remove_room {
+    display: block;
+    margin-bottom:15px;
+    text-align: end;
+}
+
+.room-action a.btn{
+    text-transform: none;
+    margin: inherit;
+    padding: 0;
+}
 
 
 
-/* rooms in step 2 */
+    /* rooms in step 2 */
 
 .details {
    padding:15px;

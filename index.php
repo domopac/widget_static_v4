@@ -13,7 +13,7 @@ and open the template in the editor.
     <!-- Material Design fonts -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
+
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -26,7 +26,7 @@ and open the template in the editor.
     <link href="css/main.css" rel='stylesheet' type='text/css'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--test-->
+    <!--test-->
 </head>
 <body>
 
@@ -34,29 +34,29 @@ and open the template in the editor.
 <div class="container-fluid">
 
 
-        <div class="navbar navbar-default primary_color">
-                 <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-
-                </div>
-            <div class="navbar-collapse collapse navbar-responsive-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#calendar"><i class="glyphicon glyphicon-calendar"></i> Kalender</a>
-                    </li>
-                    <li><a href="#rooms"><i class="glyphicon glyphicon-bed"></i> Zimmer</a></li>
-                    <li><a href="#service"><i class="glyphicon glyphicon-star"></i> Leistungen</a></li>
-                    <li><a href="#total"><i class="glyphicon glyphicon-user"></i> Übersicht</a></li>
-                </ul>
-            </div>
+    <div class="navbar navbar-default primary_color">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
         </div>
-        <div class="progress">
-            <div class="progress-bar primary_bg" style="width: 25%"></div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#calendar"><i class="glyphicon glyphicon-calendar"></i> Kalender</a>
+                </li>
+                <li><a href="#rooms"><i class="glyphicon glyphicon-bed"></i> Zimmer</a></li>
+                <li><a href="#service"><i class="glyphicon glyphicon-star"></i> Leistungen</a></li>
+                <li><a href="#total"><i class="glyphicon glyphicon-user"></i> Übersicht</a></li>
+            </ul>
         </div>
+
+    </div>
+    <div class="progress">
+        <div class="progress-bar primary_bg" style="width: 25%"></div>
+    </div>
 
 </div>
 
@@ -67,7 +67,7 @@ and open the template in the editor.
         <div class="row">
 
             <div class="col-xs text-center" id="summary">
-                <span id="summary_rooms">1</span><span id="summary_person">2</span><span id="summary_kinder"></span><span id="summary_fromDate"></span><span id="summary_toDate"></span>
+                <span id="summary_rooms">1</span><span id="summary_persons">2</span><span id="summary_kinder"></span><span id="summary_fromDate"></span><span id="summary_toDate"></span>
             </div>
         </div>
 
@@ -80,9 +80,9 @@ and open the template in the editor.
 
 
     <div class="row">
-        
+
         <div class="col-md-8 col-xs-12">
- 
+
 
             <div class="jumbotron ">
                 <!--  Generated calendar  Start -->
@@ -863,453 +863,565 @@ and open the template in the editor.
         <div class="col-md-4 col-xs-12" id="all_rooms">
 
             <div class="jumbotron" id="room_1_data">
-                
+
                 <div class="calendar_accordion">
 
 
-                    <h3 >Zimmer 1</h3>
-                    <div>
+                    <h3 >Zimmer 1 </h3>
+                    <div id="room_1">
 
-                <div class="col-xs-6 margin-bottom">
-                   
-                        <div class="form-group">
-                          <label for="room_1_adults_count">Erwachsene</label>
-                          <select id="room_1_adults_count" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_1_adults_count">Erwachsene</label>
+                                <select id="room_1_adults_count" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
                         </div>
-                    
-                </div>
 
-                <div class="col-xs-6 margin-bottom">
-                    
-                        <div class="form-group">
-                          <label for="room_1_children_count">Kinder</label>
-                          <select id="room_1_children_count" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_1_children_count">Kinder</label>
+                                <select id="room_1_children_count" class="form-control">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
                         </div>
-                    
-                </div>
 
 
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_1_children_1_age">Alter des Kindes</label>
-                          <select id="room_1_children_1_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_1_age">Alter des Kindes</label>
+                                <select id="room_1_children_1_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_2_age">Alter des Kindes</label>
+                                <select id="room_1_children_2_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_3_age">Alter des Kindes</label>
+                                <select id="room_1_children_3_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_4_age">Alter des Kindes</label>
+                                <select id="room_1_children_4_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_1_children_2_age">Alter des Kindes</label>
-                          <select id="room_1_children_2_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
+
+
+                    <h3 >Zimmer 2 </h3>
+                    <div id="room_2">
+
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_2_adults_count">Erwachsene</label>
+                                <select id="room_2_adults_count" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_2_children_count">Kinder</label>
+                                <select id="room_2_children_count" class="form-control">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_1_age">Alter des Kindes</label>
+                                <select id="room_2_children_1_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_2_age">Alter des Kindes</label>
+                                <select id="room_2_children_2_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_3_age">Alter des Kindes</label>
+                                <select id="room_2_children_3_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_4_age">Alter des Kindes</label>
+                                <select id="room_2_children_4_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_1_children_3_age">Alter des Kindes</label>
-                          <select id="room_1_children_3_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
+
+
+                    <h3 >Zimmer 3 </h3>
+                    <div id="room_3">
+
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_3_adults_count">Erwachsene</label>
+                                <select id="room_3_adults_count" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_3_children_count">Kinder</label>
+                                <select id="room_3_children_count" class="form-control">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_1_age">Alter des Kindes</label>
+                                <select id="room_3_children_1_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_2_age">Alter des Kindes</label>
+                                <select id="room_3_children_2_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_3_age">Alter des Kindes</label>
+                                <select id="room_3_children_3_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_4_age">Alter des Kindes</label>
+                                <select id="room_3_children_4_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
+
+
+
                 </div>
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_1_children_4_age">Alter des Kindes</label>
-                          <select id="room_1_children_4_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
+
+                <div class="room-action row"><a href="javascript:void(0)" class="is-focused btn btn-link col-xs-6" id="add_room"><i class="glyphicon glyphicon-plus"></i> Zimmer hinzufügen</a>
+                <a href="javascript:void(0)" class="is-focused btn btn-link disabled col-xs-6" id="remove_room"><i class="glyphicon glyphicon-minus"></i> Zimmer entfernen</a>
                 </div>
+                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg">Buchen</a>
+
+
             </div>
 
 
-                    <h3 >Zimmer 2</h3>
-                    <div>
-
-                <div class="col-xs-6 margin-bottom">
-
-                        <div class="form-group">
-                          <label for="room_2_adults_count">Erwachsene</label>
-                          <select id="room_2_adults_count" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </div>
-
-                </div>
-
-                <div class="col-xs-6 margin-bottom">
-
-                        <div class="form-group">
-                          <label for="room_2_children_count">Kinder</label>
-                          <select id="room_2_children_count" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </div>
-
-                </div>
-
-
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_2_children_1_age">Alter des Kindes</label>
-                          <select id="room_2_children_1_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_2_children_2_age">Alter des Kindes</label>
-                          <select id="room_2_children_2_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_2_children_2_age">Alter des Kindes</label>
-                          <select id="room_2_children_2_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_2_children_2_age">Alter des Kindes</label>
-                          <select id="room_2_children_2_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-            </div>
-
-
-                     <h3 >Zimmer 3</h3>
-                    <div>
-
-                <div class="col-xs-6 margin-bottom">
-
-                        <div class="form-group">
-                          <label for="room_3_adults_count">Erwachsene</label>
-                          <select id="room_3_adults_count" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </div>
-
-                </div>
-
-                <div class="col-xs-6 margin-bottom">
-
-                        <div class="form-group">
-                          <label for="room_3_children_count">Kinder</label>
-                          <select id="room_3_children_count" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                        </div>
-
-                </div>
-
-
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_3_children_1_age">Alter des Kindes</label>
-                          <select id="room_3_children_1_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_3_children_2_age">Alter des Kindes</label>
-                          <select id="room_3_children_2_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_3_children_2_age">Alter des Kindes</label>
-                          <select id="room_3_children_2_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="form-group">
-                          <label for="room_3_children_2_age">Alter des Kindes</label>
-                          <select id="room_3_children_2_age" class="form-control">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                          </select>
-                    </div>
-                </div>
-            </div>
-
-
-
-            </div>
-
-                <a href="javascript:void(0)" class="is-focused" id="add_room"><i class="glyphicon glyphicon-plus"></i> Zimmer hinzufügen</a>
-                    <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg">Buchen</a>
-
-
-
-            </div>
-            
-            
         </div>
-        
-        </div>
-</div>
-        
-        
-
-
-
-
-
-
-
-
-    <div class="container-fluid widget_tab " id="rooms">
-
-
-        <div class="jumbotron col-xs-12 no-padding room" id="room_1">
-
-            <div class="col-sm-12 col-md-6  col-lg-4 img-container">
-                <img src="img/room.jpg" class="img-responsive" >
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-8">
-                <div class="col-xs-12">
-                    <h2 class="room_name">Double Deluxe Room</h2>
-                    <div class="room_icons">
-                        <i class="glyphicon glyphicon-grain"></i>
-                        <i class="glyphicon glyphicon-bed"></i>
-                        <i class="glyphicon glyphicon-picture"></i>
-                        <i class="glyphicon glyphicon-glass"></i>
-                        <i class="glyphicon glyphicon-phone-alt"></i>
-                        <i class="glyphicon glyphicon-modal-window"></i>
-                    </div>
-                    <div class="room_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                        Nulla molestie congue enim eu placerat. 
-                    </div>
-                        <a href="javascript:void(0)" class="btn btn-raised btn-lg info_btn" >Buchen</a>
-
-
-                </div>
-            </div>
-            <div class="col-xs-12 room_board">
-               
-                <div class="accordion">
-                    <h3 >Bed and Breakfast</h3>
-                    <div>
-                        <div class="col-sm-9">First content panel
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                    Nulla molestie congue enim eu placerat. 
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
-                        </div>
-                    </div>
-                    <h3>Half Board</h3>
-                    <div>
-                        <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
-                        </div>
-                    </div>
-                    <h3>Full Board</h3>
-                    <div>
-                        <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="jumbotron col-xs-12 no-padding room" id="room_2">
-
-            <div class="col-sm-3 img-container">
-                <img src="img/bath.jpg" class="img-responsive" >
-            </div>
-            <div class="col-sm-9">
-                <div class="col-xs-12">
-                    <h2 class="room_name">Suite Premium</h2>
-                    <div class="room_icons">
-                        <i class="glyphicon glyphicon-grain"></i>
-                        <i class="glyphicon glyphicon-bed"></i>
-                        <i class="glyphicon glyphicon-picture"></i>
-                        <i class="glyphicon glyphicon-glass"></i>
-                        <i class="glyphicon glyphicon-phone-alt"></i>
-                        <i class="glyphicon glyphicon-modal-window"></i>
-                    </div>
-                    <div class="room_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                        Nulla molestie congue enim eu placerat. 
-                    </div>
-                        <a href="javascript:void(0)" class="btn btn-raised btn-lg info_btn" >Buchen</a>
-
-
-                </div>
-            </div>
-            <div class="col-xs-12 room_board">
-               
-                <div class="accordion">
-                    <h3 >Bed and Breakfast</h3>
-                    <div>
-                        <div class="col-sm-9">First content panel
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                    Nulla molestie congue enim eu placerat. 
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
-                        </div>
-                    </div>
-                    <h3>Half Board</h3>
-                    <div>
-                        <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
-                        </div>
-                    </div>
-                    <h3>Full Board</h3>
-                    <div>
-                        <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div class="jumbotron col-xs-12 no-padding room" id="room_3">
-
-            <div class="col-sm-3 img-container">
-                <img src="img/bath.jpg" class="img-responsive" >
-            </div>
-            <div class="col-sm-9">
-                <div class="col-xs-12">
-                    <h2 class="room_name">Suite Premium</h2>
-                    <div class="room_icons">
-                        <i class="glyphicon glyphicon-grain"></i>
-                        <i class="glyphicon glyphicon-bed"></i>
-                        <i class="glyphicon glyphicon-picture"></i>
-                        <i class="glyphicon glyphicon-glass"></i>
-                        <i class="glyphicon glyphicon-phone-alt"></i>
-                        <i class="glyphicon glyphicon-modal-window"></i>
-                    </div>
-                    <div class="room_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                        Nulla molestie congue enim eu placerat. 
-                    </div>
-                        <a href="javascript:void(0)" class="btn btn-raised btn-lg info_btn" >Buchen</a>
-
-
-                </div>
-            </div>
-            <div class="col-xs-12 room_board">
-               
-                <div class="accordion">
-                    <h3 >Bed and Breakfast</h3>
-                    <div>
-                        <div class="col-sm-9">First content panel
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                    Nulla molestie congue enim eu placerat. 
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
-                        </div>
-                    </div>
-                    <h3>Half Board</h3>
-                    <div>
-                        <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
-                        </div>
-                    </div>
-                    <h3>Full Board</h3>
-                    <div>
-                        <div>First content panel
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
 
     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid widget_tab " id="rooms">
+
+
+    <div class="jumbotron col-xs-12 no-padding room" id="room_1">
+
+        <div class="col-sm-12 col-md-6  col-lg-4 img-container">
+            <img src="img/room.jpg" class="img-responsive" >
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-8">
+            <div class="col-xs-12">
+                <h2 class="room_name">Double Deluxe Room</h2>
+                <div class="room_icons">
+                    <i class="glyphicon glyphicon-grain"></i>
+                    <i class="glyphicon glyphicon-bed"></i>
+                    <i class="glyphicon glyphicon-picture"></i>
+                    <i class="glyphicon glyphicon-glass"></i>
+                    <i class="glyphicon glyphicon-phone-alt"></i>
+                    <i class="glyphicon glyphicon-modal-window"></i>
+                </div>
+                <div class="room_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                    Nulla molestie congue enim eu placerat.
+                </div>
+                <a href="javascript:void(0)" class="btn btn-raised btn-lg info_btn" >Buchen</a>
+
+
+            </div>
+        </div>
+        <div class="col-xs-12 room_board">
+
+            <div class="accordion">
+                <h3 >Bed and Breakfast</h3>
+                <div>
+                    <div class="col-sm-9">First content panel
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                        Nulla molestie congue enim eu placerat.
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
+                    </div>
+                </div>
+                <h3>Half Board</h3>
+                <div>
+                    <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
+                    </div>
+                </div>
+                <h3>Full Board</h3>
+                <div>
+                    <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron col-xs-12 no-padding room" id="room_2">
+
+        <div class="col-sm-3 img-container">
+            <img src="img/bath.jpg" class="img-responsive" >
+        </div>
+        <div class="col-sm-9">
+            <div class="col-xs-12">
+                <h2 class="room_name">Suite Premium</h2>
+                <div class="room_icons">
+                    <i class="glyphicon glyphicon-grain"></i>
+                    <i class="glyphicon glyphicon-bed"></i>
+                    <i class="glyphicon glyphicon-picture"></i>
+                    <i class="glyphicon glyphicon-glass"></i>
+                    <i class="glyphicon glyphicon-phone-alt"></i>
+                    <i class="glyphicon glyphicon-modal-window"></i>
+                </div>
+                <div class="room_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                    Nulla molestie congue enim eu placerat.
+                </div>
+                <a href="javascript:void(0)" class="btn btn-raised btn-lg info_btn" >Buchen</a>
+
+
+            </div>
+        </div>
+        <div class="col-xs-12 room_board">
+
+            <div class="accordion">
+                <h3 >Bed and Breakfast</h3>
+                <div>
+                    <div class="col-sm-9">First content panel
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                        Nulla molestie congue enim eu placerat.
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
+                    </div>
+                </div>
+                <h3>Half Board</h3>
+                <div>
+                    <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
+                    </div>
+                </div>
+                <h3>Full Board</h3>
+                <div>
+                    <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron col-xs-12 no-padding room" id="room_3">
+
+        <div class="col-sm-3 img-container">
+            <img src="img/bath.jpg" class="img-responsive" >
+        </div>
+        <div class="col-sm-9">
+            <div class="col-xs-12">
+                <h2 class="room_name">Suite Premium</h2>
+                <div class="room_icons">
+                    <i class="glyphicon glyphicon-grain"></i>
+                    <i class="glyphicon glyphicon-bed"></i>
+                    <i class="glyphicon glyphicon-picture"></i>
+                    <i class="glyphicon glyphicon-glass"></i>
+                    <i class="glyphicon glyphicon-phone-alt"></i>
+                    <i class="glyphicon glyphicon-modal-window"></i>
+                </div>
+                <div class="room_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                    Nulla molestie congue enim eu placerat.
+                </div>
+                <a href="javascript:void(0)" class="btn btn-raised btn-lg info_btn" >Buchen</a>
+
+
+            </div>
+        </div>
+        <div class="col-xs-12 room_board">
+
+            <div class="accordion">
+                <h3 >Bed and Breakfast</h3>
+                <div>
+                    <div class="col-sm-9">First content panel
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                        Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                        Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                        Nulla molestie congue enim eu placerat.
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
+                    </div>
+                </div>
+                <h3>Half Board</h3>
+                <div>
+                    <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
+                    </div>
+                </div>
+                <h3>Full Board</h3>
+                <div>
+                    <div>First content panel
+                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
 
 
 
@@ -1346,7 +1458,7 @@ and open the template in the editor.
     $.material.init();
 
     $("#calendar").show(400);
-    
+
     $("select").dropdown({ "autoinit" : ".select" });
 
     $( ".accordion" ).accordion({
@@ -1355,7 +1467,7 @@ and open the template in the editor.
         heightStyle: "content"
     });
 
-     $( ".calendar_accordion" ).accordion({
+    $( ".calendar_accordion" ).accordion({
         collapsible: true,
         active: 0,
         heightStyle: "content"
