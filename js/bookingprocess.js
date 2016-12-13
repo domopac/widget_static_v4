@@ -146,9 +146,9 @@ function loadCalendar() {
     fromCalendar = "2016-12-01";
     toCalendar = "2017-01-31";
     bookCalendar = retrieveBookCalendar("2016-12-01", "2017-01-31");
-    var firstMonthDays = $(".generated .DayPicker-Body").first().find(".DayPicker-Day");
+    var firstMonthDays = $(".DayPicker-Body").first().find(".DayPicker-Day");
     loadMonth(fromCalendar,firstMonthDays,bookCalendar)
-    var secondMonthDays = $($(".generated .DayPicker-Body")[1]).find(".DayPicker-Day");
+    var secondMonthDays = $($(".DayPicker-Body")[1]).find(".DayPicker-Day");
     loadMonth(toCalendar,secondMonthDays,bookCalendar)
 }
 
