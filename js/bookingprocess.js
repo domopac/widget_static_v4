@@ -15,14 +15,12 @@ function BookingRequest() {
     this.toDate = '';
     this.fromCalDayElement = null;
     this.toCalDayElement = null;
-    
+    this.numberOfKinder = 0
+
     this.numberOfPersons = function () {
         return this.personsAge.length;
     };
 
-    this.numberOfKinder = function () {
-        return this.childrenAge.length;
-    };
 
     this.resetDates = function () {
         this.fromDate = '';
@@ -136,7 +134,7 @@ function buildLabel(prefix, value) {
 function summaryUpdate() {
     $('#summary_rooms').text(buildLabel("Rooms: ",bookingRequest.numberOfRooms));
     $('#summary_persons').text(buildLabel("Persons: ",bookingRequest.numberOfPersons()));
-    $('#summary_kinder').text(buildLabel("Kinder: ",bookingRequest.numberOfKinder()));
+    $('#summary_kinder').text(buildLabel("Kinder: ",bookingRequest.numberOfKinder));
     $('#summary_fromDate').text(buildLabel("from: ",bookingRequest.fromDate));
     $('#summary_toDate').text(buildLabel("to:",bookingRequest.toDate));
 }
@@ -239,16 +237,32 @@ function updateRoom(element, inc){
 
     $("#summary").trigger("update");
 }
+function kinderChanged($kinderSelect) {
+    var $room = $kinderSelect.closest(".room");
+    $room.find(".children-age").each(function(i) {
+            if (i < $kinderSelect.val()) {
+                $(this).show();
+            };
+    });
+    bookingRequest.numberOfKinder = 0;
+    $(".children_count select").each(function () {
+        bookingRequest.numberOfKinder += parseInt($(this).val());
+    })
+    $("#summary").trigger("update");
+}
 /**
  * Created by rifaccio on 06/12/2016.
  */
 $(document).ready(function(){
     //Bind action
     $(".DayPicker-Day").click(function(){daySelected($(this))});
+    $("#calendar").on("update-cal-range", function(){calendarRangeUpdate()});
+    $("#summary").on("update", function(){summaryUpdate()});
+    //room
     $("#add_room").click(function(){updateRoom($(this), +1)});
     $("#remove_room").click(function(){updateRoom($(this), -1)});
-    $("#summary").on("update", function(){summaryUpdate()});
-    $("#calendar").on("update-cal-range", function(){calendarRangeUpdate()});
+    $(".children_count select").change(function () { kinderChanged($(this))});
+
     //Load Calendar
     loadCalendar();
     syncGUIToBookingRequest();

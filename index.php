@@ -868,7 +868,7 @@ and open the template in the editor.
 
 
                     <h3 >Zimmer 1 </h3>
-                    <div id="room_1">
+                    <div id="room_1" class="room">
 
                         <div class="col-xs-6 margin-bottom">
 
@@ -886,7 +886,7 @@ and open the template in the editor.
 
                         <div class="col-xs-6 margin-bottom">
 
-                            <div class="form-group">
+                            <div class="form-group children_count">
                                 <label for="room_1_children_count">Kinder</label>
                                 <select id="room_1_children_count" class="form-control">
                                     <option value="0">0</option>
@@ -985,7 +985,7 @@ and open the template in the editor.
 
 
                     <h3 >Zimmer 2 </h3>
-                    <div id="room_2">
+                    <div id="room_2" class="room">
 
                         <div class="col-xs-6 margin-bottom">
 
@@ -1003,7 +1003,7 @@ and open the template in the editor.
 
                         <div class="col-xs-6 margin-bottom">
 
-                            <div class="form-group">
+                            <div class="form-group children_count">
                                 <label for="room_2_children_count">Kinder</label>
                                 <select id="room_2_children_count" class="form-control">
                                     <option value="0">0</option>
@@ -1102,7 +1102,7 @@ and open the template in the editor.
 
 
                     <h3 >Zimmer 3 </h3>
-                    <div id="room_3">
+                    <div id="room_3" class="room">
 
                         <div class="col-xs-6 margin-bottom">
 
@@ -1120,7 +1120,7 @@ and open the template in the editor.
 
                         <div class="col-xs-6 margin-bottom">
 
-                            <div class="form-group">
+                            <div class="form-group children_count">
                                 <label for="room_3_children_count">Kinder</label>
                                 <select id="room_3_children_count" class="form-control">
                                     <option value="0">0</option>
