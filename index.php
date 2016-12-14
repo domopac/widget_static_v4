@@ -29,7 +29,23 @@ and open the template in the editor.
     <!--test-->
 </head>
 <body>
-
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="position:absolute;width:0;height:0;visibility:hidden">
+    <defs>
+        <symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 22 24" id="Bs-calendar">
+            <path
+                d="M1.714 22.286h3.857v-3.857h-3.857v3.857zM6.429 22.286h4.286v-3.857h-4.286v3.857zM1.714 17.571h3.857v-4.286h-3.857v4.286zM6.429 17.571h4.286v-4.286h-4.286v4.286zM1.714 12.429h3.857v-3.857h-3.857v3.857zM11.571 22.286h4.286v-3.857h-4.286v3.857zM6.429 12.429h4.286v-3.857h-4.286v3.857zM16.714 22.286h3.857v-3.857h-3.857v3.857zM11.571 17.571h4.286v-4.286h-4.286v4.286zM6.857 6v-3.857q0-0.174-0.127-0.301t-0.301-0.127h-0.857q-0.174 0-0.301 0.127t-0.127 0.301v3.857q0 0.174 0.127 0.301t0.301 0.127h0.857q0.174 0 0.301-0.127t0.127-0.301zM16.714 17.571h3.857v-4.286h-3.857v4.286zM11.571 12.429h4.286v-3.857h-4.286v3.857zM16.714 12.429h3.857v-3.857h-3.857v3.857zM17.143 6v-3.857q0-0.174-0.127-0.301t-0.301-0.127h-0.857q-0.174 0-0.301 0.127t-0.127 0.301v3.857q0 0.174 0.127 0.301t0.301 0.127h0.857q0.174 0 0.301-0.127t0.127-0.301zM22.286 5.143v17.143q0 0.696-0.509 1.205t-1.205 0.509h-18.857q-0.696 0-1.205-0.509t-0.509-1.205v-17.143q0-0.696 0.509-1.205t1.205-0.509h1.714v-1.286q0-0.884 0.629-1.513t1.513-0.629h0.857q0.884 0 1.513 0.629t0.629 1.513v1.286h5.143v-1.286q0-0.884 0.629-1.513t1.513-0.629h0.857q0.884 0 1.513 0.629t0.629 1.513v1.286h1.714q0.696 0 1.205 0.509t0.509 1.205z"></path>
+        </symbol>
+        <symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="Bs-arrow-left">
+            <path
+                d="M13.891 17.418c0.268 0.272 0.268 0.709 0 0.979s-0.701 0.271-0.969 0l-7.83-7.908c-0.268-0.27-0.268-0.707 0-0.979l7.83-7.908c0.268-0.27 0.701-0.27 0.969 0s0.268 0.709 0 0.979l-7.141 7.419 7.141 7.418z"></path>
+        </symbol>
+        <symbol xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="Bs-arrow-right">
+            <path
+                d="M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z"></path>
+        </symbol>
+    </defs>
+</svg>
 
 <div class="container-fluid">
 
@@ -62,11 +78,11 @@ and open the template in the editor.
 
 
 <div class="container-fluid">
-    <div class="jumbotron">
+    <div class="jumbotron"  id="summary">
 
         <div class="row">
 
-            <div class="col-xs text-center" id="summary">
+            <div class="col-xs text-center">
                 <span id="summary_rooms">1</span><span id="summary_persons">2</span><span id="summary_kinder"></span><span id="summary_fromDate"></span><span id="summary_toDate"></span>
             </div>
         </div>
@@ -89,17 +105,17 @@ and open the template in the editor.
                 <div id="Bs-DayPicker" class="generated Bs-DayPicker Bs-Section Bs-DayPicker--valid">
                     <div class="Bs-Section__Block">
                         <div class="DayPicker-Wrapper">
-                            <button type="button" title="Vorheriger Monat"
+                            <button type="button" title="Vorheriger Monat" id="prev-month"
                                     class="DayPicker-Navigation--prev Bs--unstyled">
                                 <svg class="Bs-Icon">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="http://www.hotelhgv.it/erweitertes-widget/#Bs-arrow-left"></use>
+                                         xlink:href="#Bs-arrow-left"></use>
                                 </svg>
                             </button>
                             <div class="DayPicker DayPicker--de-de DayPicker--interactionDisabled" role="application"
                                  tabindex="false">
                                 <div class="DayPicker-Month">
-                                    <form class="DayPicker-Caption"><select class="Bs-Select">
+                                    <form class="DayPicker-Caption"><select class="Bs-Select" id="first-month">
                                             <option value="2016-12-01">Dezember 2016</option>
                                             <option value="2017-01-01">Januar 2017</option>
                                             <option value="2017-02-01">Februar 2017</option>
@@ -459,7 +475,7 @@ and open the template in the editor.
                                     </div>
                                 </div>
                                 <div class="DayPicker-Month">
-                                    <form class="DayPicker-Caption"><select class="Bs-Select">
+                                    <form class="DayPicker-Caption"><select class="Bs-Select" id="second-month">
                                             <option value="2016-12-01">Dezember 2016</option>
                                             <option value="2017-01-01" selected>Januar 2017</option>
                                             <option value="2017-02-01">Februar 2017</option>
@@ -825,11 +841,11 @@ and open the template in the editor.
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" title="Nächster Monat"
+                            <button type="button" title="Nächster Monat" id="next-month"
                                     class="DayPicker-Navigation--next Bs--unstyled">
                                 <svg class="Bs-Icon">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="http://www.hotelhgv.it/erweitertes-widget/#Bs-arrow-right"></use>
+                                         xlink:href="#Bs-arrow-right"></use>
                                 </svg>
                             </button>
                         </div>
@@ -847,11 +863,8 @@ and open the template in the editor.
                             </div>
                             <span>Auswahl</span></div>
                     </div>
-                    <div class="Bs-Infos">
-                        <div class="Bs-Info"><span>Bitte wählen Sie Ihren Abreisetag</span></div>
-                    </div>
                 </div>
-
+                <button type="button" title="Vorheriger Monat" class="DayPicker-Navigation--prev Bs--unstyled"><svg class="Bs-Icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.hotelhgv.it/erweitertes-widget/#Bs-arrow-left"></use></svg></button>
                 <!--  Generated calendar html end -->
 
 
@@ -869,117 +882,120 @@ and open the template in the editor.
 
                     <h3 >Zimmer 1 </h3>
                     <div id="room_1" class="room">
+                        <div class="row">
+                            <div class="col-xs-6 margin-bottom">
 
-                        <div class="col-xs-6 margin-bottom">
+                                <div class="form-group">
+                                    <label for="room_1_adults_count">Erwachsene</label>
+                                    <select id="room_1_adults_count" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
 
-                            <div class="form-group">
-                                <label for="room_1_adults_count">Erwachsene</label>
-                                <select id="room_1_adults_count" class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
                             </div>
 
-                        </div>
+                            <div class="col-xs-6 margin-bottom">
 
-                        <div class="col-xs-6 margin-bottom">
+                                <div class="form-group children_count">
+                                    <label for="room_1_children_count">Kinder</label>
+                                    <select id="room_1_children_count" class="form-control">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
 
-                            <div class="form-group children_count">
-                                <label for="room_1_children_count">Kinder</label>
-                                <select id="room_1_children_count" class="form-control">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-xs-3  children-age">
-                            <div class="form-group">
-                                <label for="room_1_children_1_age">Alter des Kindes</label>
-                                <select id="room_1_children_1_age" class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                </select>
                             </div>
                         </div>
+                        <div class="row">
 
-                        <div class="col-xs-3  children-age">
-                            <div class="form-group">
-                                <label for="room_1_children_2_age">Alter des Kindes</label>
-                                <select id="room_1_children_2_age" class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                </select>
+                            <div class="col-xs-3  children-age">
+                                <div class="form-group">
+                                    <label for="room_1_children_1_age">Alter des Kindes</label>
+                                    <select id="room_1_children_1_age" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-3  children-age">
-                            <div class="form-group">
-                                <label for="room_1_children_3_age">Alter des Kindes</label>
-                                <select id="room_1_children_3_age" class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                </select>
+
+                            <div class="col-xs-3  children-age">
+                                <div class="form-group">
+                                    <label for="room_1_children_2_age">Alter des Kindes</label>
+                                    <select id="room_1_children_2_age" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-3 children-age">
-                            <div class="form-group">
-                                <label for="room_1_children_4_age">Alter des Kindes</label>
-                                <select id="room_1_children_4_age" class="form-control">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                </select>
+                            <div class="col-xs-3  children-age">
+                                <div class="form-group">
+                                    <label for="room_1_children_3_age">Alter des Kindes</label>
+                                    <select id="room_1_children_3_age" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                    </select>
+                                </div>
                             </div>
+                            <div class="col-xs-3 children-age">
+                                <div class="form-group">
+                                    <label for="room_1_children_4_age">Alter des Kindes</label>
+                                    <select id="room_1_children_4_age" class="form-control">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                    </select>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -1222,9 +1238,9 @@ and open the template in the editor.
                 </div>
 
                 <div class="room-action row"><a href="javascript:void(0)" class="is-focused btn btn-link col-xs-6" id="add_room"><i class="glyphicon glyphicon-plus"></i> Zimmer hinzufügen</a>
-                <a href="javascript:void(0)" class="is-focused btn btn-link disabled col-xs-6" id="remove_room"><i class="glyphicon glyphicon-minus"></i> Zimmer entfernen</a>
+                    <a href="javascript:void(0)" class="is-focused btn btn-link disabled col-xs-6" id="remove_room"><i class="glyphicon glyphicon-minus"></i> Zimmer entfernen</a>
                 </div>
-                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg">Buchen</a>
+                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg" id="book-btn">Buchen</a>
 
 
             </div>

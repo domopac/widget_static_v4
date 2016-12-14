@@ -132,11 +132,16 @@ function buildLabel(prefix, value) {
     return valueStr.trim() != '0' && valueStr.trim() != '' ? prefix + valueStr.trim() : '';
 }
 function summaryUpdate() {
-    $('#summary_rooms').text(buildLabel("Rooms: ",bookingRequest.numberOfRooms));
-    $('#summary_persons').text(buildLabel("Persons: ",bookingRequest.numberOfPersons()));
-    $('#summary_kinder').text(buildLabel("Kinder: ",bookingRequest.numberOfKinder));
-    $('#summary_fromDate').text(buildLabel("from: ",bookingRequest.fromDate));
-    $('#summary_toDate').text(buildLabel("to:",bookingRequest.toDate));
+    if ($("a[href='#calendar']").parent().hasClass("active")){
+        $('#summary').hide();
+    } else {
+        $('#summary').show();
+        $('#summary_rooms').text(buildLabel("Rooms: ", bookingRequest.numberOfRooms));
+        $('#summary_persons').text(buildLabel("Persons: ", bookingRequest.numberOfPersons()));
+        $('#summary_kinder').text(buildLabel("Kinder: ", bookingRequest.numberOfKinder));
+        $('#summary_fromDate').text(buildLabel("from: ", bookingRequest.fromDate));
+        $('#summary_toDate').text(buildLabel("to:", bookingRequest.toDate));
+    }
 }
 
 function calendarRangeUpdate() {
@@ -242,13 +247,22 @@ function kinderChanged($kinderSelect) {
     $room.find(".children-age").each(function(i) {
             if (i < $kinderSelect.val()) {
                 $(this).show();
-            };
+            } else {
+                $(this).hide();
+            }
     });
     bookingRequest.numberOfKinder = 0;
     $(".children_count select").each(function () {
         bookingRequest.numberOfKinder += parseInt($(this).val());
     })
     $("#summary").trigger("update");
+}
+function chekinCheckoutConfirmed() {
+    $("a[href='#rooms']").click();
+}
+function changeMonth(numberOfMonthToMove) {
+    firstMonthDate = moment($('#first-month').val());
+    $('first-month').val(firstMonthDate.add(numberOfMonthToMove,'m'));
 }
 /**
  * Created by rifaccio on 06/12/2016.
@@ -262,8 +276,11 @@ $(document).ready(function(){
     $("#add_room").click(function(){updateRoom($(this), +1)});
     $("#remove_room").click(function(){updateRoom($(this), -1)});
     $(".children_count select").change(function () { kinderChanged($(this))});
+    $("#book-btn").click(function(){chekinCheckoutConfirmed()});
 
     //Load Calendar
+    $("#prev-month").click(function(){changeMonth(-1)});
+    $("#next-month").click(function(){changeMonth(+1)});
     loadCalendar();
     syncGUIToBookingRequest();
     $("#summary").trigger("update");

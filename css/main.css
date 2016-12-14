@@ -1,3 +1,6 @@
+.ui-accordion div.ui-accordion-content.room {
+    overflow: visible;
+}
 /* navbar */
 .navbar {
     margin-bottom: 0px;
