@@ -64,6 +64,12 @@ function loadCheckOutRestriction(bookCalendar, $day) {
         var dayDateStr = dayCursor.format(DAFAULT_DATE_FORMAT);
 
         var $dayCursor = $("div[data-date=" + dayDateStr + "]").not(".DayPicker-Day--disabled");
+        if (!bookCalendar.calendarDays[$dayCursor.attr("data-date")]){
+            //the day is not bookable; the chekout must be done this day;
+            $dayCursor.addClass("DayPicker-Day--bookable");
+            $dayCursor.find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint", messages.chekOutAllowed);
+            break;
+        }
         if( minStayDay &&  dayCursor <= minStayDay && dayCursor > day){
             $dayCursor.addClass("DayPicker-Day--warning");
             $dayCursor.find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint", messages.minStayRestriction);
@@ -82,7 +88,7 @@ function loadCheckInRestriction(bookCalendar) {
     for (;dayDateCursor <= momentDateToCalendar; dayDateCursor.add(1,'d')){
         var dayDateStr = dayDateCursor.format(DAFAULT_DATE_FORMAT);
         var $day = $("div[data-date=" + dayDateStr + "]").not(".DayPicker-Day--disabled");
-        if( bookCalendar.calendarDays[dayDateStr] && !$day.hasClass(".DayPicker-Day--selected")){
+        if( bookCalendar.calendarDays[dayDateStr] && !bookCalendar.calendarDays[dayDateStr].checkInRestriction && !$day.hasClass(".DayPicker-Day--selected")){
             $day.addClass("DayPicker-Day--bookable");
             $day.find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint", messages.chekInAllowed);
         }
@@ -173,10 +179,9 @@ function calendarRangeUpdate() {
     }
 }
 function loadCalendar() {
-    moment.locale("de_DE");
-    fromCalendar = "2016-12-01";
-    toCalendar = "2017-01-31";
-    bookCalendar = retrieveBookCalendar("2016-12-01", "2017-01-31");
+    var fromCalendar = $('#first-month').val();
+    var toCalendar = moment($('#second-month').val()).endOf('month');
+    bookCalendar = retrieveBookCalendar(fromCalendar, toCalendar);
     var firstMonthDays = $(".DayPicker-Body").first().find(".DayPicker-Day");
     loadMonth(fromCalendar,firstMonthDays,bookCalendar)
     var secondMonthDays = $($(".DayPicker-Body")[1]).find(".DayPicker-Day");
@@ -257,17 +262,36 @@ function kinderChanged($kinderSelect) {
     })
     $("#summary").trigger("update");
 }
+
 function chekinCheckoutConfirmed() {
     $("a[href='#rooms']").click();
 }
+
 function changeMonth(numberOfMonthToMove) {
-    firstMonthDate = moment($('#first-month').val());
-    $('first-month').val(firstMonthDate.add(numberOfMonthToMove,'m'));
+    firstMonthDate = moment($('#first-month').val()).add(numberOfMonthToMove,'month');
+    secondMonthDate = firstMonthDate.clone().add(1,'month');
+
+    $('#first-month').val(firstMonthDate.format(DAFAULT_DATE_FORMAT)).trigger("change");
+    $('#second-month').val(secondMonthDate.format(DAFAULT_DATE_FORMAT)).trigger("change");
+    loadCalendar();
+}
+function monthChanged(event, $monthSelect) {
+    var $firstMonth = $('#first-month');
+    var $second = $('#second-month');
+    var $ToChange = $monthSelect.is($firstMonth) ? $second : $firstMonth;
+    var diff =  $monthSelect.is($firstMonth) ? 1 : -1
+
+    var newValue = moment($monthSelect.val()).add(diff,'month').format(DAFAULT_DATE_FORMAT);
+    if (newValue != $ToChange.val()){
+        $ToChange.val(newValue).change();
+        loadCalendar();
+    }
 }
 /**
  * Created by rifaccio on 06/12/2016.
  */
 $(document).ready(function(){
+    moment.locale("de_DE");
     //Bind action
     $(".DayPicker-Day").click(function(){daySelected($(this))});
     $("#calendar").on("update-cal-range", function(){calendarRangeUpdate()});
@@ -278,9 +302,11 @@ $(document).ready(function(){
     $(".children_count select").change(function () { kinderChanged($(this))});
     $("#book-btn").click(function(){chekinCheckoutConfirmed()});
 
-    //Load Calendar
+    $("#first-month").change(function (event) { monthChanged(event, $(this))});
+    $("#second-month").change(function (event) { monthChanged(event, $(this))});
     $("#prev-month").click(function(){changeMonth(-1)});
     $("#next-month").click(function(){changeMonth(+1)});
+    //Load Calendar
     loadCalendar();
     syncGUIToBookingRequest();
     $("#summary").trigger("update");

@@ -1,120 +1,388 @@
 /**
  * Created by rifaccio on 11/12/2016.
  */
+
 var calendar = {
     "from": "2016-12-01",
     "to": "2017-01-31",
     "calendarDays":
-        {
-            "2016-12-01" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-02" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-03" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-04" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-05" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-06" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-07" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-08" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-09" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-10" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-11" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2016-12-12" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3, "maxStay": 45}
-            },
-            "2017-01-01" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-02" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-03" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-04" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-05" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-06" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-07" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-08" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-09" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-10" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-11" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-12" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-13" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-14" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
-            "2017-01-11115" : {
-                "checkInRestriction": false,
-                "checkOutRestriction": {"minStay": 3}
-            },
+    {
+        "2016-12-01":{
+            "checkInRestriction": true,
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":1
+            }
+        },
+        "2016-12-02":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-03":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-04":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-05":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-06":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-07":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-08":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-09":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-10":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-11":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-12":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-13":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-14":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-15":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-16":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-17":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-18":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-19":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-20":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-21":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-22":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-23":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-24":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-25":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-26":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-27":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-28":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-29":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-30":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2016-12-31":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-01":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-02":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-03":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-04":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        /** day closed nont bookable not returned
+        "2017-01-05":{
+            "checkInRestriction": true,
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },**/
+        "2017-01-06":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-07":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-08":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-09":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-10":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-11":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-12":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-13":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-14":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-15":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-16":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-17":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-18":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-19":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-20":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-21":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-22":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-23":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-24":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-25":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-26":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-27":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-28":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-29":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-30":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
+        },
+        "2017-01-31":{
+            "checkOutRestriction":{
+                "minStay":3,
+                "maxStay":45
+            }
         }
+    }
 }
 
 /**
@@ -126,3 +394,20 @@ function retrieveBookCalendar(from, to){
 
     return calendar;
 }
+function generate(){
+var from = moment("2016-12-01");
+var to = from.clone().add(1,'month').endOf("month");
+    var genCal = {
+        "calendarDays": {}
+    };
+    var jsonstr = "{";
+    for (var day = from; day <= to ; day.add(1,'d')){
+        jsonstr +=  '"' + day.format("YYYY-MM-DD") +'" : {"checkOutRestriction" : {"minStay": 3, "maxStay": 45}},';
+    }
+    jsonstr =  jsonstr.substring(0, jsonstr.length - 1);
+    jsonstr += "}";
+    console.log(jsonstr);
+    genCal.calendarDays= JSON.parse(jsonstr);
+    console.log(genCal);
+}
+

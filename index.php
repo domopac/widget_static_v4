@@ -116,7 +116,7 @@ and open the template in the editor.
                                  tabindex="false">
                                 <div class="DayPicker-Month">
                                     <form class="DayPicker-Caption"><select class="Bs-Select" id="first-month">
-                                            <option value="2016-12-01">Dezember 2016</option>
+                                            <option value="2016-12-01" selected>Dezember 2016</option>
                                             <option value="2017-01-01">Januar 2017</option>
                                             <option value="2017-02-01">Februar 2017</option>
                                             <option value="2017-03-01">März 2017</option>
