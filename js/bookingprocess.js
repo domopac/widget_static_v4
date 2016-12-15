@@ -64,13 +64,15 @@ function loadCheckOutRestriction(bookCalendar, $day) {
         var dayDateStr = dayCursor.format(DAFAULT_DATE_FORMAT);
 
         var $dayCursor = $("div[data-date=" + dayDateStr + "]").not(".DayPicker-Day--disabled");
-        if (!bookCalendar.calendarDays[$dayCursor.attr("data-date")]){
+        if (!bookCalendar.calendarDays[dayDateStr]){
             //the day is not bookable; the chekout must be done this day;
             $dayCursor.addClass("DayPicker-Day--bookable");
             $dayCursor.find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint", messages.chekOutAllowed);
             break;
         }
-        if( minStayDay &&  dayCursor <= minStayDay && dayCursor > day){
+        if (bookCalendar.calendarDays[dayDateStr].checkOutRestriction && bookCalendar.calendarDays[dayDateStr].checkOutRestriction.closed) {
+            $dayCursor.find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint", messages.chekOutNotAllowed);
+        } else if( minStayDay &&  dayCursor <= minStayDay && dayCursor > day){
             $dayCursor.addClass("DayPicker-Day--warning");
             $dayCursor.find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint", messages.minStayRestriction);
         } else {
@@ -88,7 +90,10 @@ function loadCheckInRestriction(bookCalendar) {
     for (;dayDateCursor <= momentDateToCalendar; dayDateCursor.add(1,'d')){
         var dayDateStr = dayDateCursor.format(DAFAULT_DATE_FORMAT);
         var $day = $("div[data-date=" + dayDateStr + "]").not(".DayPicker-Day--disabled");
-        if( bookCalendar.calendarDays[dayDateStr] && !bookCalendar.calendarDays[dayDateStr].checkInRestriction && !$day.hasClass(".DayPicker-Day--selected")){
+        if( bookCalendar.calendarDays[dayDateStr]
+            && (!bookCalendar.calendarDays[dayDateStr].checkInRestriction || !bookCalendar.calendarDays[dayDateStr].checkInRestriction.closed)
+            && !$day.hasClass(".DayPicker-Day--selected")){
+
             $day.addClass("DayPicker-Day--bookable");
             $day.find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint", messages.chekInAllowed);
         }
@@ -96,7 +101,7 @@ function loadCheckInRestriction(bookCalendar) {
 
 }
 function validForCheckInCheckOut($day) {
-    if ($day.hasClass("DayPicker-Day--disabled")){
+    if ($day.hasClass("DayPicker-Day--disabled") || !$day.hasClass("DayPicker-Day--bookable")){
         return false;
     }
     if ( $day.is(bookingRequest.fromCalDayElement)) {
@@ -106,7 +111,7 @@ function validForCheckInCheckOut($day) {
     if ( (bookingRequest.twoDateSelected() || !bookingRequest.fromDate) && !bookCalendar.calendarDays[dayDate]) {
         return false;
     } else if (  !bookingRequest.toDate && bookingRequest.fromDate
-        && bookCalendar.calendarDays[bookingRequest.fromCalDayElement.attr("data-date")].checkOutRestriction[dayDate]){
+        && bookCalendar.calendarDays[bookingRequest.fromCalDayElement.attr("data-date")].checkOutRestriction.closed){
         return false;
     }
 
@@ -150,7 +155,7 @@ function summaryUpdate() {
     }
 }
 
-function calendarRangeUpdate() {
+function updatedCalendarRange() {
     $(".DayPicker-Day").removeClass("DayPicker-Day--first");
     $(".DayPicker-Day").removeClass("DayPicker-Day--last");
     $(".DayPicker-Day").removeClass("DayPicker-Day--selected");
@@ -174,8 +179,12 @@ function calendarRangeUpdate() {
             }
         })
         loadCheckInRestriction(bookCalendar);
+        $("#book-btn").removeClass("disabled");
+        $("a[href='#rooms']").parent().removeClass("disabled");
     } else {
         loadCheckOutRestriction(bookCalendar, bookingRequest.fromCalDayElement);
+        $("#book-btn").addClass("disabled");
+        $("a[href='#rooms']").parent().addClass("disabled");
     }
 }
 function loadCalendar() {
@@ -185,7 +194,8 @@ function loadCalendar() {
     var firstMonthDays = $(".DayPicker-Body").first().find(".DayPicker-Day");
     loadMonth(fromCalendar,firstMonthDays,bookCalendar)
     var secondMonthDays = $($(".DayPicker-Body")[1]).find(".DayPicker-Day");
-    loadMonth(toCalendar,secondMonthDays,bookCalendar)
+    loadMonth(toCalendar,secondMonthDays,bookCalendar);
+    loadCheckInRestriction(bookCalendar);
 }
 
 function loadMonth(dateStr, uiMonthCalendar,bookCalendar){
@@ -198,12 +208,12 @@ function loadMonth(dateStr, uiMonthCalendar,bookCalendar){
         $(this).attr("data-date",momentDay.format(DAFAULT_DATE_FORMAT));
         $(this).attr("data-day-of-week",momentDay.format("dd"));
         $(this).removeClass().addClass("DayPicker-Day");
+        $(this).find(".DayPicker-Day__Date").first().text('');
         $(this).find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint","");
         if(!momentDay.isSame(fromMonthLastDay, 'month')){
             $(this).addClass("DayPicker-Day--outside DayPicker-Day--disabled");
-        } else if (bookCalendar.calendarDays[momentDay.format(DAFAULT_DATE_FORMAT)]){
-            $(this).addClass("DayPicker-Day--bookable");
-            $(this).find(".DayPicker-Day__Wrapper.hint--top").attr("data-hint",messages.chekInAllowed);
+        } else {
+            $(this).find(".DayPicker-Day__Date").first().text(momentDay.format("D"));
         }
         momentDay.add(1,'d');
     })
@@ -264,6 +274,7 @@ function kinderChanged($kinderSelect) {
 }
 
 function chekinCheckoutConfirmed() {
+    $("a[href='#rooms']").parent().removeClass('disabled');
     $("a[href='#rooms']").click();
 }
 
@@ -294,7 +305,7 @@ $(document).ready(function(){
     moment.locale("de_DE");
     //Bind action
     $(".DayPicker-Day").click(function(){daySelected($(this))});
-    $("#calendar").on("update-cal-range", function(){calendarRangeUpdate()});
+    $("#calendar").on("update-cal-range", function(){updatedCalendarRange()});
     $("#summary").on("update", function(){summaryUpdate()});
     //room
     $("#add_room").click(function(){updateRoom($(this), +1)});

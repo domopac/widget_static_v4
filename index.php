@@ -63,9 +63,9 @@ and open the template in the editor.
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#calendar"><i class="glyphicon glyphicon-calendar"></i> Kalender</a>
                 </li>
-                <li><a href="#rooms"><i class="glyphicon glyphicon-bed"></i> Zimmer</a></li>
-                <li><a href="#service"><i class="glyphicon glyphicon-star"></i> Leistungen</a></li>
-                <li><a href="#total"><i class="glyphicon glyphicon-user"></i> Übersicht</a></li>
+                <li class="disabled"><a href="#rooms"><i class="glyphicon glyphicon-bed"></i> Zimmer</a></li>
+                <li class="disabled"><a href="#service"><i class="glyphicon glyphicon-star"></i> Leistungen</a></li>
+                <li class="disabled"><a href="#total"><i class="glyphicon glyphicon-user"></i> Übersicht</a></li>
             </ul>
         </div>
 
@@ -145,11 +145,32 @@ and open the template in the editor.
                                     <div class="DayPicker-Body" role="grid">
                                         <div class="DayPicker-Week" role="gridcell">
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="DayPicker-Day DayPicker-Day--disabled" role="gridcell"
                                                  aria-label="Do. 1. Dez. 2016" aria-disabled="true"
                                                  aria-selected="false">
@@ -472,6 +493,75 @@ and open the template in the editor.
                                             <div role="gridcell" aria-disabled="true"
                                                  class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable"></div>
                                         </div>
+                                        <div class="DayPicker-Week" role="gridcell">
+                                            <div role="gridcell" aria-disabled="true"
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="gridcell" aria-disabled="true"
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="gridcell" aria-disabled="true"
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--disabled">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="DayPicker-Day DayPicker-Day--disabled" role="gridcell"
+                                                 aria-label="Do. 1. Dez. 2016" aria-disabled="true"
+                                                 aria-selected="false">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="DayPicker-Day DayPicker-Day--disabled" role="gridcell"
+                                                 aria-label="Fr. 2. Dez. 2016" aria-disabled="true"
+                                                 aria-selected="false">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="DayPicker-Day DayPicker-Day--disabled" role="gridcell"
+                                                 aria-label="Sa. 3. Dez. 2016" aria-disabled="true"
+                                                 aria-selected="false">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="DayPicker-Day DayPicker-Day--disabled" role="gridcell"
+                                                 aria-label="So. 4. Dez. 2016" aria-disabled="true"
+                                                 aria-selected="false">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="DayPicker-Month">
@@ -506,17 +596,59 @@ and open the template in the editor.
                                     <div class="DayPicker-Body" role="grid">
                                         <div class="DayPicker-Week" role="gridcell">
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside DayPicker-Day--bookable">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="Abreise nicht möglich">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="DayPicker-Day DayPicker-Day--bookable" role="gridcell"
                                                  aria-label="So. 1. Jan. 2017" aria-disabled="false"
                                                  aria-selected="false">
@@ -828,15 +960,50 @@ and open the template in the editor.
                                                 </div>
                                             </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div role="gridcell" aria-disabled="true"
-                                                 class="DayPicker-Day DayPicker-Day--outside"></div>
+                                                 class="DayPicker-Day DayPicker-Day--outside">
+                                                <div class="DayPicker-Day__Wrapper hint--top"
+                                                     data-hint="">
+                                                    <div class="DayPicker-Day__Body">
+                                                        <div class="DayPicker-Day__Date"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1240,9 +1407,7 @@ and open the template in the editor.
                 <div class="room-action row"><a href="javascript:void(0)" class="is-focused btn btn-link col-xs-6" id="add_room"><i class="glyphicon glyphicon-plus"></i> Zimmer hinzufügen</a>
                     <a href="javascript:void(0)" class="is-focused btn btn-link disabled col-xs-6" id="remove_room"><i class="glyphicon glyphicon-minus"></i> Zimmer entfernen</a>
                 </div>
-                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg" id="book-btn">Buchen</a>
-
-
+                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg disabled" id="book-btn">Buchen</a>
             </div>
 
 

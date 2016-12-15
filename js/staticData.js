@@ -8,7 +8,9 @@ var calendar = {
     "calendarDays":
     {
         "2016-12-01":{
-            "checkInRestriction": true,
+            "checkInRestriction": {
+                "closed" : true,
+            },
             "checkOutRestriction":{
                 "minStay":3,
                 "maxStay":1
@@ -69,6 +71,9 @@ var calendar = {
             }
         },
         "2016-12-11":{
+            "checkInRestriction": {
+                "closed" : true,
+            },
             "checkOutRestriction":{
                 "minStay":3,
                 "maxStay":45
@@ -178,8 +183,7 @@ var calendar = {
         },
         "2016-12-29":{
             "checkOutRestriction":{
-                "minStay":3,
-                "maxStay":45
+                "closed":true,
             }
         },
         "2016-12-30":{
@@ -218,7 +222,7 @@ var calendar = {
                 "maxStay":45
             }
         },
-        /** day closed nont bookable not returned
+        /** day closed not bookable not returned
         "2017-01-05":{
             "checkInRestriction": true,
             "checkOutRestriction":{

@@ -23,6 +23,9 @@
     color:#C62828!important;
     background:#fff!important;
 }
+.primary_color .disabled{
+    color:rgba(0, 0, 0, 0.26)!important;
+}
 .primary_bg {
     color:#fff!important;
     background:#C62828!important;
