@@ -33,6 +33,7 @@ $(document).ready(function(){
             $(this).parents(".room").siblings().find(".room_board").slideUp().removeClass("yo");
         }
         $(this).parents(".room").find(".room_board").slideToggle().addClass("yo");
+        $(this).parents(".room").find(".book-btn-room").toggle();
     });
 
 });
