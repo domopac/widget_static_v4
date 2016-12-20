@@ -93,13 +93,13 @@ and open the template in the editor.
     </div>
 </div>
 
-<? include 'step1_calendar.php'; ?>
+<? include "step1_calendar.php"; ?>
 
-<? include 'step2_rooms.php'; ?>
+<? include "step2_rooms.php"; ?>
 
-<? include 'step3_service.php'; ?>
+<? include "step3_service.php"; ?>
 
-<? include 'step4_total.php'; ?>
+<? include "step4_total.php"; ?>
 
 
 <!-- jquery  -->

@@ -1,6 +1,18 @@
 .ui-accordion div.ui-accordion-content.room {
     overflow: visible;
 }
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
 /* navbar */
 .navbar {
     margin-bottom: 0px;
@@ -114,6 +126,12 @@
 .room_description {
     margin-bottom:20px;
 }
+.push-down{
+    margin: auto;
+    bottom: 1px;
+    position: absolute;
+    width: 98%;
+}
 .room_board {
     padding:15px;
     display: none;
@@ -142,12 +160,38 @@
     font-size: 18px;
 }
 
+.room .info_btn{
+    text-decoration: underline;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 1.2em;
+    padding:0;
+}
 
 .board{
     border-top:1px solid #c5c5c5;
-    padding-top: 10px;
     font-weight: bold;
+    margin-bottom: 1px;
 }
+.board .book_btn{
+    margin: 0px 0;
+    width: 209px;
+}
+
+.arrow-right {
+    float: right;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+
+    border-left: 18px solid #C62828;
+}
+
+.board-name {
+    padding-top: 10px;
+}
+
 .room_board .collapse{
     font-weight: normal;
     padding-bottom: 5px;

@@ -28,11 +28,13 @@ $(document).ready(function(){
 
 
     // info_btn opens the room_board section
-    $(".info_btn").on("click",function() {
-        if( $(this).parents(".room").siblings().find(".room_board").hasClass("room_board_open")) {
-            $(this).parents(".room").siblings().find(".room_board").slideUp().removeClass("room_board_open");
+    $(".room .info_btn").on("click",function() {
+        var room_boards = $(this).parents(".room").find(".room_board");
+        if(room_boards.hasClass("room_board_open")) {
+            room_boards.slideUp().removeClass("room_board_open");
+        } else {
+            room_boards.slideDown().addClass("room_board_open");
         }
-        $(this).parents(".room").find(".room_board").slideToggle().addClass("room_board_open");
         $(this).parents(".room").find(".book-btn-room").toggle();
     });
 
