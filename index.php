@@ -1698,24 +1698,15 @@ and open the template in the editor.
 
     <div class="jumbotron col-xs-12 no-padding room" >
 
-        <div class="col-sm-12 col-md-6  col-lg-4 img-container">
-            <img src="img/room.jpg" class="img-responsive" >
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-8">
-            <div class="col-xs-12">
-                <h2 class="room_name">Double Deluxe Room</h2>
-                <div class="room_icons">
-                    <i class="glyphicon glyphicon-grain"></i>
-                    <i class="glyphicon glyphicon-bed"></i>
-                    <i class="glyphicon glyphicon-picture"></i>
-                    <i class="glyphicon glyphicon-glass"></i>
-                    <i class="glyphicon glyphicon-phone-alt"></i>
-                    <i class="glyphicon glyphicon-modal-window"></i>
                 </div>
-                <div class="room_description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
-                    Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
-                    Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
-                    Nulla molestie congue enim eu placerat.
+                <div class="clearfix">
+                    <div class="col-sm-6">
+                        <a href="javascript:void(0)" class="btn btn-link is-focused info_btn" >Buchen</a>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg book-btn-room" >ab 323&euro;</a>
+                    </div>
                 </div>
                 
 
@@ -1727,6 +1718,17 @@ and open the template in the editor.
             <div class="accordion">
                 <h3 >Bed and Breakfast</h3>
                 <div>
+                    </div>
+                    <div class="collapse" id="fb">
+                        <div>FB Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet molestie tellus.
+                            Phasellus a commodo nisi, id laoreet nisi. Nullam orci purus, ornare ac diam eu, hendrerit aliquet arcu.
+                            Duis quis semper urna. Nunc viverra mi non egestas luctus. Nullam a tristique nibh. Maecenas eu lacinia velit.
+                            Nulla molestie congue enim eu placerat.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
                     
                     
                         
@@ -1745,16 +1747,50 @@ and open the template in the editor.
                 <div>
                     <div>First content panel
                         <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450€</a>
-                    </div>
-                </div>
-                <h3>Full Board</h3>
-                <div>
-                    <div>First content panel
-                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 513€</a>
-                    </div>
                 </div>
             </div>
         </div>
+        
+        <div class=' col-sm-3 col-xs-12 '>
+            <div class='jumbotron no-padding'>
+                <section class='room_image_container'>
+                    <img src='img/room.jpg' class='img-responsive room_image' alt='extra_room_1'/>
+                    <a href="javascript:void(0)" class="btn primary_bg btn-fab add_extra"><i class="material-icons">add</i></a>
+                    <a href="javascript:void(0)" class="btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
+                </section>
+                <div class='extra_title'>
+                    <h4>Extra Bett</h4>                    
+                </div>
+            </div>
+        </div>
+        
+        <div class=' col-sm-3 col-xs-12 '>
+            <div class='jumbotron no-padding'>
+                <section class='room_image_container'>
+                    <img src='img/room.jpg' class='img-responsive room_image' alt='extra_room_1'/>
+                    <a href="javascript:void(0)" class="btn primary_bg btn-fab add_extra"><i class="material-icons">add</i></a>
+                    <a href="javascript:void(0)" class="btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
+                </section>
+                <div class='extra_title'>
+                    <h4>Extra Bett</h4>                    
+                </div>
+            </div>
+        </div>
+
+        <div class=' col-sm-3 col-xs-12 '>
+            <div class='jumbotron no-padding'>
+                <section class='room_image_container'>
+                    <img src='img/room.jpg' class='img-responsive room_image' alt='extra_room_1'/>
+                    <a href="javascript:void(0)" class="btn primary_bg btn-fab add_extra"><i class="material-icons">add</i></a>
+                    <a href="javascript:void(0)" class="btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
+                </section>
+                <div class='extra_title'>
+                    <h4>Extra Bett</h4>                    
+                </div>
+            </div>
+        </div>
+
+
     </div>
     
     <div class='row'>
@@ -1768,51 +1804,6 @@ and open the template in the editor.
                 </section>
                 <div class='extra_title'>
                     <h4>Extra Bett</h4>                    
-                </div>
-            </div>
-        </div>
-        
-        <div class=' col-sm-3 col-xs-12 '>
-            <div class='jumbotron no-padding'>
-                <section class='room_image_container'>
-                    <img src='img/room.jpg' class='img-responsive room_image' alt='extra_room_1'/>
-                    <a href="javascript:void(0)" class="btn primary_bg btn-fab add_extra"><i class="material-icons">add</i></a>
-                    <a href="javascript:void(0)" class="btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
-                </section>
-                <div class='extra_title'>
-                    <h4>Extra Bett</h4>                    
-                </div>
-            </div>
-        </div>
-        
-        <div class=' col-sm-3 col-xs-12 '>
-            <div class='jumbotron no-padding'>
-                <section class='room_image_container'>
-                    <img src='img/room.jpg' class='img-responsive room_image' alt='extra_room_1'/>
-                    <a href="javascript:void(0)" class="btn primary_bg btn-fab add_extra"><i class="material-icons">add</i></a>
-                    <a href="javascript:void(0)" class="btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
-                </section>
-                <div class='extra_title'>
-                    <h4>Extra Bett</h4>                    
-                </div>
-            </div>
-        </div>
-
-        <div class=' col-sm-3 col-xs-12 '>
-            <div class='jumbotron no-padding'>
-                <section class='room_image_container'>
-                    <img src='img/room.jpg' class='img-responsive room_image' alt='extra_room_1'/>
-                    <a href="javascript:void(0)" class="btn primary_bg btn-fab add_extra"><i class="material-icons">add</i></a>
-                    <a href="javascript:void(0)" class="btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
-                </section>
-                <div class='extra_title'>
-                    <h4>Extra Bett</h4>                    
-                </div>
-            </div>
-        </div>
-
-
-    </div>
 
 
 </div>
@@ -1873,4 +1864,5 @@ and open the template in the editor.
 </body>
 
 </html>
+
 
