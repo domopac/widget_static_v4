@@ -143,6 +143,16 @@
 }
 
 
+.board{
+    border-top:1px solid #c5c5c5;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.room_board .collapse{
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
 .ui-widget-content {
     border:none;
 }
