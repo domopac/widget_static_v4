@@ -29,10 +29,10 @@ $(document).ready(function(){
 
     // info_btn opens the room_board section
     $(".info_btn").on("click",function() {
-        if( $(this).parents(".room").siblings().find(".room_board").hasClass("yo")) {
-            $(this).parents(".room").siblings().find(".room_board").slideUp().removeClass("yo");
+        if( $(this).parents(".room").siblings().find(".room_board").hasClass("room_board_open")) {
+            $(this).parents(".room").siblings().find(".room_board").slideUp().removeClass("room_board_open");
         }
-        $(this).parents(".room").find(".room_board").slideToggle().addClass("yo");
+        $(this).parents(".room").find(".room_board").slideToggle().addClass("room_board_open");
     });
 
 });

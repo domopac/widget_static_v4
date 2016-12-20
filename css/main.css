@@ -42,7 +42,9 @@
     display:none;
 }
 
-
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    background-image:url("http://code.jquery.com/ui/1.12.1/themes/base/images/ui-icons_444444_256x240.png")!important;
+}
 
 .form-group, .form-control {
     display: inline;
@@ -116,31 +118,30 @@
     padding:15px;
     display: none;
 }
-
-
+.service_board {
+    padding:15px;
+}
 
 .ui-accordion .ui-accordion-content {
-    padding:1em 1em 5em 1em;
+    padding:1em 1em 2em 1em;
     overflow: hidden;
 }
 
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border-bottom:1px solid #c5c5c5;
+    border:1px solid #c5c5c5;
     color: #454545;
 }
 .ui-accordion .ui-accordion-header {
     padding: 1em .5em 1em .7em;
     border-left:none;
     border-right:none;
-    border-top:none;
+    border-bottom:none;
     border-radius:0px;
     background:#fff;
+    font-size: 18px;
 }
 
-.ui-accordion .ui-accordion-header:first-child {
-    border-top:1px solid #c5c5c5;
-}
 
 .ui-widget-content {
     border:none;
@@ -154,6 +155,28 @@
 }
 
 
+/* step 3 */
+
+
+.room_image_container {
+    position: relative;
+}
+
+.extra_title {
+    padding:15px;
+    text-align: center;
+}
+.extra_title * {
+    margin:0px;
+}
+.add_extra, .remove_extra {
+    position:absolute !important;
+    top:5%;
+    right:20px;
+}
+.remove_extra {
+    right:96px;
+}
 
 
 
