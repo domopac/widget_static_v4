@@ -338,6 +338,9 @@
     position: absolute;
     color: #C62828;
 }
+.service-board .ui-state-active span.price{
+    display:none;
+}
 .extra-price{
     position: absolute;
     z-index: 10;
@@ -362,6 +365,7 @@
 .extra-price.selected span.quantity{
     text-align: left;
     font-size: .8em;
+    font-weight:normal;
 }
 .extra-price.selected span.price{
     text-align: right;

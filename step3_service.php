@@ -4,10 +4,10 @@
 
     <div class="jumbotron col-xs-12 no-padding room" >
 
-        <div class="col-sm-12 col-md-4 img-container">
+        <div class="col-sm-12 col-md-4 col-lg-3 img-container">
             <img src="img/room.jpg" class="img-responsive" >
         </div>
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-8 col-lg-9">
             <div class="col-xs-12">
                 <h2 class="room_name">Double Deluxe Room</h2>
                 <h3 class="room_alert"><i class="material-icons">info_outline</i> Nur noch 2 Zimmer/Apt. verf&uuml;gbart</h3>
@@ -46,24 +46,51 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-10"><span class="quantity">2x</span> Wellness massage</div>
-                            <div class="col-xs-2"><span class="price">104 €</span></div>
+                            <div class="col-xs-2"><span class="price">156 €</span></div>
                         </div>
                     </div>
 
-                    <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 524 €</a>
+                    <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 576 €</a>
 
                 </div>
-                <h3>Half Board</h3>
-                <div>
-                    <div>First content panel
-                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 450 €</a>
+                <h3>Half Board <span class="price">604 €</span></h3>
+                <div class="details">
+                    <div class="col-xs-12 col-sm-7">
+                        Hello I'm some random text and I stand here without sense. If you read this text you dont have much to do right now, so why do you not do something more significant that read this frase to the end. Why you read on this line
                     </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                            <div class="col-xs-10"><span class="quantity">1x</span> Double Deluxe Room Half Board</div>
+                            <div class="col-xs-2"><span class="price">550 €</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10"><span class="quantity">2x</span> Wellness massage</div>
+                            <div class="col-xs-2"><span class="price">156 €</span></div>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 706 €</a>
+
                 </div>
-                <h3>Full Board</h3>
-                <div>
-                    <div>First content panel
-                        <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 514 €</a>
+                <h3>Full Board<span class="price">1204 €</span></h3>
+                <div class="details">
+
+                    <div class="col-xs-12 col-sm-7">
+                        Hello I'm some random text and I stand here without sense. If you read this text you dont have much to do right now, so why do you not do something more significant that read this frase to the end. Why you read on this line
                     </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <div class="row">
+                            <div class="col-xs-10"><span class="quantity">1x</span> Double Deluxe Room Full Board</div>
+                            <div class="col-xs-2"><span class="price">1104 €</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10"><span class="quantity">2x</span> Wellness massage</div>
+                            <div class="col-xs-2"><span class="price">156 €</span></div>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 1260 €</a>
+
                 </div>
             </div>
         </div>
@@ -71,7 +98,7 @@
 
     <div class='row'>
 
-        <div class=' col-sm-4 col-xs-12 '>
+        <div class="col-xs-12  col-sm-4 col-lg-2">
             <div class='jumbotron no-padding'>
                 <div class="extra-price selected">
                         <span class="quantity">2x </span><span class="price">78 €</span>
@@ -84,12 +111,12 @@
                     <a href="javascript:void(0)" class="push-down btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
                 </div>
                 <div class='extra_title'>
-                    <h4>Extra Bett</h4>
+                    <h4>Wellness massage</h4>
                 </div>
             </div>
         </div>
 
-        <div class=' col-sm-4 col-xs-12 '>
+        <div class="col-xs-12  col-sm-4 col-lg-2">
             <div class='jumbotron no-padding'>
                 <div class="extra-price">
                    <span class="price">98 €</span>
@@ -102,12 +129,12 @@
                     <a href="javascript:void(0)" class="push-down btn primary_bg btn-fab remove_extra"><i class="material-icons">remove</i></a>
                 </div>
                 <div class='extra_title'>
-                    <h4>Extra Bett</h4>
+                    <h4>Ski rental</h4>
                 </div>
             </div>
         </div>
 
-        <div class=' col-sm-4 col-xs-12 '>
+        <div class="col-xs-12  col-sm-4 col-lg-2">
             <div class='jumbotron no-padding'>
                 <div class="extra-price">
                     <span class="price">98 €</span>
@@ -121,7 +148,7 @@
 
                 </div>
                 <div class='extra_title'>
-                    <h4>Extra Bett</h4>
+                    <h4>Bike rental</h4>
                 </div>
             </div>
         </div>
@@ -130,3 +157,13 @@
 
 
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', active, false);
+    function active() {
+        $(document).ready(function() {
+            $("a[href='#service']").click();
+            $(".bb.total").click();
+            summaryUpdate();
+        })
+    }
+</script>

@@ -303,6 +303,10 @@ function boardConfirmed() {
     $("a[href='#service']").parent().removeClass('disabled');
     $("a[href='#service']").click();
 }
+function serviceConfirmed() {
+    $("a[href='#total']").parent().removeClass('disabled');
+    $("a[href='#total']").click();
+}
 /**
  * Created by rifaccio on 06/12/2016.
  */
@@ -318,6 +322,7 @@ $(document).ready(function(){
     $(".children_count select").change(function () { kinderChanged($(this))});
     $("#book-btn").click(function(){chekinCheckoutConfirmed()});
     $(".board .book_btn").click(function(){boardConfirmed()});
+    $(".service-board .book_btn").click(function(){serviceConfirmed()});
     $(".book-btn-room").click(function(){boardConfirmed()});
 
     $("#first-month").change(function (event) { monthChanged(event, $(this))});
