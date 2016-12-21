@@ -157,13 +157,3 @@
 
 
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', active, false);
-    function active() {
-        $(document).ready(function() {
-            $("a[href='#service']").click();
-            $(".bb.total").click();
-            summaryUpdate();
-        })
-    }
-</script>
