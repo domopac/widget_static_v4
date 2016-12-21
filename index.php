@@ -66,7 +66,7 @@ and open the template in the editor.
                 </li>
                 <li class=""><a href="#rooms"><i class="glyphicon glyphicon-bed"></i> Zimmer</a></li>
                 <li class=""><a href="#service"><i class="glyphicon glyphicon-star"></i> Leistungen</a></li>
-                <li class="disabled"><a href="#total"><i class="glyphicon glyphicon-user"></i> Übersicht</a></li>
+                <li class=""><a href="#total"><i class="glyphicon glyphicon-user"></i> Übersicht</a></li>
             </ul>
         </div>
 
