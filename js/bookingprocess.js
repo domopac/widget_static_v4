@@ -276,6 +276,7 @@ function kinderChanged($kinderSelect) {
 function chekinCheckoutConfirmed() {
     $("a[href='#rooms']").parent().removeClass('disabled');
     $("a[href='#rooms']").click();
+    summaryUpdate();
 }
 
 function changeMonth(numberOfMonthToMove) {
@@ -317,6 +318,7 @@ $(document).ready(function(){
     $(".children_count select").change(function () { kinderChanged($(this))});
     $("#book-btn").click(function(){chekinCheckoutConfirmed()});
     $(".board .book_btn").click(function(){boardConfirmed()});
+    $(".book-btn-room").click(function(){boardConfirmed()});
 
     $("#first-month").change(function (event) { monthChanged(event, $(this))});
     $("#second-month").change(function (event) { monthChanged(event, $(this))});
