@@ -4,7 +4,7 @@
 
     <div class="clearfix  row-eq-height">
 
-        <div class="col-md-8 col-xs-12" style="padding-left: 0px">
+        <div class="col-md-8 col-xs-12 calendar">
 
             <div class="jumbotron ">
                 <!--  Generated calendar  Start -->
