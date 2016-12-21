@@ -298,6 +298,10 @@ function monthChanged(event, $monthSelect) {
         loadCalendar();
     }
 }
+function boardConfirmed() {
+    $("a[href='#service']").parent().removeClass('disabled');
+    $("a[href='#service']").click();
+}
 /**
  * Created by rifaccio on 06/12/2016.
  */
@@ -312,6 +316,7 @@ $(document).ready(function(){
     $("#remove_room").click(function(){updateRoom($(this), -1)});
     $(".children_count select").change(function () { kinderChanged($(this))});
     $("#book-btn").click(function(){chekinCheckoutConfirmed()});
+    $(".board .book_btn").click(function(){boardConfirmed()});
 
     $("#first-month").change(function (event) { monthChanged(event, $(this))});
     $("#second-month").change(function (event) { monthChanged(event, $(this))});

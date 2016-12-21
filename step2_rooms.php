@@ -44,11 +44,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#bb-room-1">Bed and Breakfast</div>
                         <div class="col-sm-4">
-
-                            <div class="arrow-right"></div>
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
-
-
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="bb-room-1">
@@ -62,7 +58,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#hb-room-1">Half Board</div>
                         <div class="col-sm-4">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 523€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 523€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="hb-room-1">
@@ -76,7 +72,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#fb-room-1">Full Board</div>
                         <div class="col-sm-4">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 1023€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 1023€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="fb-room-1">
@@ -131,7 +127,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#bb-room-2">Bed and Breakfast</div>
                         <div class="col-sm-4">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 323€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="bb-room-2">
@@ -145,7 +141,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#hb-room-2">Half Board</div>
                         <div class="col-sm-4">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 523€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 523€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="hb-room-2">
@@ -159,7 +155,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#fb-room-2">Full Board</div>
                         <div class="col-sm-4">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 1023€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 1023€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="fb-room-2">
@@ -228,7 +224,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#hb-room-3">Half Board</div>
                         <div class="col-sm-4">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 523€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 523€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="hb-room-3">
@@ -242,7 +238,7 @@
                     <div class="clearfix board">
                         <div class="col-sm-8 board-name" data-toggle="collapse" data-target="#fb-room-3">Full Board</div>
                         <div class="col-sm-4">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 1023€</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-lg book_btn primary_bg" >Buchen um 1023€<i class="material-icons right">send</i></a>
                         </div>
                     </div>
                     <div class="collapse clearfix" id="fb-room-3">

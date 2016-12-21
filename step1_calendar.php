@@ -2,10 +2,9 @@
 <div class="container-fluid widget_tab" id="calendar">
 
 
-    <div class="row">
+    <div class="clearfix  row-eq-height">
 
-        <div class="col-md-8 col-xs-12">
-
+        <div class="col-md-8 col-xs-12" style="padding-left: 0px">
 
             <div class="jumbotron ">
                 <!--  Generated calendar  Start -->
@@ -946,382 +945,380 @@
         </div>
 
 
+        <div class="col-md-4 col-xs-12 jumbotron" id="all_rooms">
 
-        <div class="col-md-4 col-xs-12" id="all_rooms">
-
-            <div class="jumbotron" id="room_1_data">
-
-                <div class="calendar_accordion">
+            <div class="calendar_accordion">
 
 
-                    <h3 >Zimmer 1 </h3>
-                    <div id="room_1" class="room">
-                        <div class="row">
-                            <div class="col-xs-6 margin-bottom">
+                <h3 >Zimmer 1 </h3>
+                <div id="room_1" class="room">
+                    <div class="row">
+                        <div class="col-xs-6 margin-bottom">
 
-                                <div class="form-group">
-                                    <label for="room_1_adults_count">Erwachsene</label>
-                                    <select id="room_1_adults_count" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-
+                            <div class="form-group">
+                                <label for="room_1_adults_count">Erwachsene</label>
+                                <select id="room_1_adults_count" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
                             </div>
 
-                            <div class="col-xs-6 margin-bottom">
-
-                                <div class="form-group children_count">
-                                    <label for="room_1_children_count">Kinder</label>
-                                    <select id="room_1_children_count" class="form-control">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-
-                            </div>
                         </div>
-                        <div class="row">
 
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_1_children_1_age">Alter des Kindes</label>
-                                    <select id="room_1_children_1_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <div class="col-xs-6 margin-bottom">
 
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_1_children_2_age">Alter des Kindes</label>
-                                    <select id="room_1_children_2_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_1_children_3_age">Alter des Kindes</label>
-                                    <select id="room_1_children_3_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-3 children-age">
-                                <div class="form-group">
-                                    <label for="room_1_children_4_age">Alter des Kindes</label>
-                                    <select id="room_1_children_4_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
+                            <div class="form-group children_count">
+                                <label for="room_1_children_count">Kinder</label>
+                                <select id="room_1_children_count" class="form-control">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
                             </div>
 
                         </div>
                     </div>
+                    <div class="row">
 
-
-                    <h3 >Zimmer 2 </h3>
-                    <div id="room_2" class="room">
-                        <div class="row">
-                            <div class="col-xs-6 margin-bottom">
-
-                                <div class="form-group">
-                                    <label for="room_2_adults_count">Erwachsene</label>
-                                    <select id="room_2_adults_count" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
-                            <div class="col-xs-6 margin-bottom">
-
-                                <div class="form-group children_count">
-                                    <label for="room_2_children_count">Kinder</label>
-                                    <select id="room_2_children_count" class="form-control">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_1_age">Alter des Kindes</label>
+                                <select id="room_1_children_1_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_2_children_1_age">Alter des Kindes</label>
-                                    <select id="room_2_children_1_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_2_children_2_age">Alter des Kindes</label>
-                                    <select id="room_2_children_2_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_2_children_3_age">Alter des Kindes</label>
-                                    <select id="room_2_children_3_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-3 children-age">
-                                <div class="form-group">
-                                    <label for="room_2_children_4_age">Alter des Kindes</label>
-                                    <select id="room_2_children_4_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_2_age">Alter des Kindes</label>
+                                <select id="room_1_children_2_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_3_age">Alter des Kindes</label>
+                                <select id="room_1_children_3_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_1_children_4_age">Alter des Kindes</label>
+                                <select id="room_1_children_4_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+
                     </div>
-
-
-                    <h3 >Zimmer 3 </h3>
-                    <div id="room_3" class="room">
-                        <div class="row">
-                            <div class="col-xs-6 margin-bottom">
-
-                                <div class="form-group">
-                                    <label for="room_3_adults_count">Erwachsene</label>
-                                    <select id="room_3_adults_count" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
-                            <div class="col-xs-6 margin-bottom">
-
-                                <div class="form-group children_count">
-                                    <label for="room_3_children_count">Kinder</label>
-                                    <select id="room_3_children_count" class="form-control">
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_3_children_1_age">Alter des Kindes</label>
-                                    <select id="room_3_children_1_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-3  children-age">
-                                <div class="form-group">
-                                    <label for="room_3_children_2_age">Alter des Kindes</label>
-                                    <select id="room_3_children_2_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-3 children-age">
-                                <div class="form-group">
-                                    <label for="room_3_children_3_age">Alter des Kindes</label>
-                                    <select id="room_3_children_3_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xs-3 children-age">
-                                <div class="form-group">
-                                    <label for="room_3_children_4_age">Alter des Kindes</label>
-                                    <select id="room_3_children_4_age" class="form-control">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
                 </div>
 
-                <div class="room-action row"><a href="javascript:void(0)" class="is-focused btn btn-link col-xs-6" id="add_room"><i class="glyphicon glyphicon-plus"></i> Zimmer hinzufügen</a>
-                    <a href="javascript:void(0)" class="is-focused btn btn-link disabled col-xs-6" id="remove_room"><i class="glyphicon glyphicon-minus"></i> Zimmer entfernen</a>
+
+                <h3 >Zimmer 2 </h3>
+                <div id="room_2" class="room">
+                    <div class="row">
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_2_adults_count">Erwachsene</label>
+                                <select id="room_2_adults_count" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group children_count">
+                                <label for="room_2_children_count">Kinder</label>
+                                <select id="room_2_children_count" class="form-control">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_1_age">Alter des Kindes</label>
+                                <select id="room_2_children_1_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_2_age">Alter des Kindes</label>
+                                <select id="room_2_children_2_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_3_age">Alter des Kindes</label>
+                                <select id="room_2_children_3_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_2_children_4_age">Alter des Kindes</label>
+                                <select id="room_2_children_4_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg disabled" id="book-btn">Buchen</a>
+
+
+                <h3 >Zimmer 3 </h3>
+                <div id="room_3" class="room">
+                    <div class="row">
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group">
+                                <label for="room_3_adults_count">Erwachsene</label>
+                                <select id="room_3_adults_count" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-6 margin-bottom">
+
+                            <div class="form-group children_count">
+                                <label for="room_3_children_count">Kinder</label>
+                                <select id="room_3_children_count" class="form-control">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_1_age">Alter des Kindes</label>
+                                <select id="room_3_children_1_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3  children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_2_age">Alter des Kindes</label>
+                                <select id="room_3_children_2_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_3_age">Alter des Kindes</label>
+                                <select id="room_3_children_3_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 children-age">
+                            <div class="form-group">
+                                <label for="room_3_children_4_age">Alter des Kindes</label>
+                                <select id="room_3_children_4_age" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
-
+            <div class="push-down">
+                <div class="col-xs-12">
+                    <div class="room-action row"><a href="javascript:void(0)" class="is-focused btn btn-link col-xs-6" id="add_room"><i class="glyphicon glyphicon-plus"></i> Zimmer hinzufügen</a>
+                        <a href="javascript:void(0)" class="is-focused btn btn-link disabled col-xs-6" id="remove_room"><i class="glyphicon glyphicon-minus"></i> Zimmer entfernen</a>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-default btn-primary btn-lg btn-block btn-raised primary_bg disabled" id="book-btn">Buchen</a>
+                </div>
+            </div>
         </div>
 
     </div>
