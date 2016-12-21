@@ -48,6 +48,10 @@
         overflow: hidden;
     }
 
+    .Bs-DayPicker.Bs-DayPicker {
+        margin: 30px 0
+    }
+
 
 }
 
@@ -1098,10 +1102,6 @@ a.push-down.btn.primary_bg.btn-fab.remove_extra {
 
 .Bs-Completion--unsuccessful .Bs-Completion__Status {
     fill: #cc3e46
-}
-
-.Bs-DayPicker.Bs-DayPicker {
-    margin: 30px 0
 }
 
 .Bs-DayPicker-Legend {

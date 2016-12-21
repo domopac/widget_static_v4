@@ -11,12 +11,20 @@ function BookingRequest() {
     this.personsAge = ['18', '18'];
     this.childrenAge = [];
     this.numberOfRooms = 1;
-    this.fromDate = '';
-    this.toDate = '';
-    this.fromCalDayElement = null;
-    this.toCalDayElement = null;
+    this.fromCalDayElement =  $($(".DayPicker-Day")[10]);
+    this.toCalDayElement = $($(".DayPicker-Day")[13]);
+    this.fromDate = this.fromCalDayElement.attr('aria-label');
+    this.toDate = this.toCalDayElement.attr('aria-label');
     this.numberOfKinder = 0
 
+    this.momentFrom = function () {
+        var dayDate = this.fromCalDayElement.attr("data-date");
+        return moment(dayDate);
+    };
+    this.momentTo = function () {
+        var dayDate = this.toCalDayElement.attr("data-date");
+        return moment(dayDate);
+    };
     this.numberOfPersons = function () {
         return this.personsAge.length;
     };
@@ -143,16 +151,17 @@ function buildLabel(prefix, value) {
     return valueStr.trim() != '0' && valueStr.trim() != '' ? prefix + valueStr.trim() : '';
 }
 function summaryUpdate() {
-    if ($("a[href='#calendar']").parent().hasClass("active")){
+    if ($("a[href='#calendar']").parent().hasClass("active") || $("a[href='#total']").parent().hasClass("active")){
         $('#summary').hide();
     } else {
         $('#summary').show();
-        $('#summary_rooms').text(buildLabel("Rooms: ", bookingRequest.numberOfRooms));
-        $('#summary_persons').text(buildLabel("Persons: ", bookingRequest.numberOfPersons()));
-        $('#summary_kinder').text(buildLabel("Kinder: ", bookingRequest.numberOfKinder));
-        $('#summary_fromDate').text(buildLabel("from: ", bookingRequest.fromDate));
-        $('#summary_toDate').text(buildLabel("to:", bookingRequest.toDate));
     }
+    $('.summary_rooms').text(buildLabel("Rooms: ", bookingRequest.numberOfRooms));
+    $('.summary_persons').text(buildLabel("Persons: ", bookingRequest.numberOfPersons()));
+    $('.summary_kinder').text(buildLabel("Kinder: ", bookingRequest.numberOfKinder));
+    $('.summary_fromDate').text(buildLabel("from: ", bookingRequest.fromDate));
+    $('.summary_toDate').text(buildLabel("to:", bookingRequest.toDate));
+    $('.summary_nights').text(buildLabel("Nachte:", moment(bookingRequest.momentTo()).diff(bookingRequest.momentFrom(), 'day')));
 }
 
 function updatedCalendarRange() {
