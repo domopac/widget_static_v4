@@ -50,6 +50,49 @@
                             </div>
                         </div><!--.row-->
                     </div><!--.item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="jumbotron no-padding">
+                                    <div class="ribbon">
+                                        <div class="ribbon-text">ab 699</div>
+                                    </div>
+                                    <section class="room_image_container">
+                                        <img src="img/room.jpg" class="img-responsive room_image" alt="offer 1">
+                                    </section>
+                                    <div class="extra_title">
+                                        <h3>Welness Offer</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="jumbotron no-padding">
+                                    <div class="ribbon">
+                                        <div class="ribbon-text">ab 200</div>
+                                    </div>
+                                    <section class="room_image_container">
+                                        <img src="img/room.jpg" class="img-responsive room_image" alt="offer_1">
+                                    </section>
+                                    <div class="extra_title">
+                                        <h3>Ski Safari Wochenende</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="jumbotron no-padding">
+                                    <div class="ribbon">
+                                        <div class="ribbon-text">ab 500</div>
+                                    </div>
+                                    <section class="room_image_container">
+                                        <img src="img/room.jpg" class="img-responsive room_image" alt="offer_1">
+                                    </section>
+                                    <div class="extra_title">
+                                        <h3>Silvester DInner</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--.row-->
+                    </div><!--.item-->
                 </div><!--.carousel-inner-->
                 <a data-slide="prev" href="#Carousel" class="left carousel-control"><svg class="Bs-Icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#Bs-arrow-left"></use>

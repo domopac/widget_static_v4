@@ -404,6 +404,44 @@ a.push-down.btn.primary_bg.btn-fab.remove_extra {
     min-width: 20px;
 }
 
+/* Step 4 */
+.total-summary div{
+    padding: .2em;
+
+}
+.total-summary .summary-label {
+    text-align: left;
+    left: 1px;
+}
+
+.total-summary .price{
+    position: absolute;
+    text-align: right;
+    right: 25px;
+    font-weight:500;
+}
+.total-summary .price{
+    font-weight:bolder;
+
+}
+.total-summary .total{
+    border-top: 1px solid #D2D2D2;
+    font-weight:500;
+}
+
+.pay-info {
+    border: 3px solid #C62828;
+    padding-bottom: .7em;
+}
+.pay-info p{
+    font-size: 15px;
+}
+
+.personal-data {
+    margin-top: 5em;
+}
+
+
 /* calender css */
 
 [class*=hint--] {

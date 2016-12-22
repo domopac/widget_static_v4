@@ -18,10 +18,12 @@ function BookingRequest() {
     this.numberOfKinder = 0
 
     this.momentFrom = function () {
+        if (!this.fromCalDayElement) return;
         var dayDate = this.fromCalDayElement.attr("data-date");
         return moment(dayDate);
     };
     this.momentTo = function () {
+        if (!this.toCalDayElement) return;
         var dayDate = this.toCalDayElement.attr("data-date");
         return moment(dayDate);
     };
@@ -156,12 +158,12 @@ function summaryUpdate() {
     } else {
         $('#summary').show();
     }
-    $('.summary_rooms').text(buildLabel("Rooms: ", bookingRequest.numberOfRooms));
-    $('.summary_persons').text(buildLabel("Persons: ", bookingRequest.numberOfPersons()));
-    $('.summary_kinder').text(buildLabel("Kinder: ", bookingRequest.numberOfKinder));
-    $('.summary_fromDate').text(buildLabel("from: ", bookingRequest.fromDate));
-    $('.summary_toDate').text(buildLabel("to:", bookingRequest.toDate));
-    $('.summary_nights').text(buildLabel("Nachte:", moment(bookingRequest.momentTo()).diff(bookingRequest.momentFrom(), 'day')));
+    $('.summary_rooms').text(buildLabel("", bookingRequest.numberOfRooms));
+    $('.summary_persons').text(buildLabel("", bookingRequest.numberOfPersons()));
+    $('.summary_kinder').text(buildLabel("", bookingRequest.numberOfKinder));
+    $('.summary_fromDate').text(buildLabel("", bookingRequest.fromDate));
+    $('.summary_toDate').text(buildLabel("", bookingRequest.toDate));
+    $('.summary_nights').text(buildLabel("", moment(bookingRequest.momentTo()).diff(bookingRequest.momentFrom(), 'day')));
 }
 
 function updatedCalendarRange() {

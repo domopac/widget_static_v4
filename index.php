@@ -84,8 +84,12 @@ and open the template in the editor.
         <div class="row">
 
             <div class="col-xs text-center">
-                <span class="summary_rooms">1</span><span class="summary_persons">2</span><span
-                    class="summary_kinder"></span><span class="summary_fromDate"></span><span class="summary_toDate"></span>
+                <span class="summary-label">Zimmer </span><span class="summary_rooms">1</span>
+                <span class="summary-label">Erwachsene </span><span class="summary_persons">2</span>
+                <span class="summary-label">Kinder </span><span class="summary_kinder"></span>
+                <span class="summary-label">Anreise </span><span class="summary_fromDate"></span>
+                <span class="summary-label">Abreise </span><span class="summary_toDate"></span>
+                <span class="summary-label">Nachte </span><span class="summary_nights"></span>
             </div>
         </div>
 
