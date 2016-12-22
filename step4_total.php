@@ -15,17 +15,19 @@
                 <div class="clearfix"><span class="summary-label col-xs-5">Nachte </span><span
                         class="summary_nights col-xs-6"></span></div>
                 <div class="clearfix"><span class="summary-label col-xs-5">Zimmer 1 </span></div>
-                <div class="clearfix price-item ">
+                <div class="clearfix price-item price-item-room">
                     <div class="col-xs-offset-1 col-xs-6 "><span class="summary_persons">2</span><span
                             class="summary-label"> Erwachsene,</span> <span class="room_name">Double Deluxe Room</span>
                     </div>
                     <div><span class="price">550,00 &euro;</span></div>
                 </div>
                 <div class="clearfix"><span class="summary-label col-xs-5">Zusatzleistungen</span></div>
-                <div class="clearfix price-item">
-                    <div class="col-xs-offset-1 col-xs-6"><span class="quantity">2x</span><span class="extra-name">Wellness massage</span>
+                <div class="extra">
+                    <div class="clearfix price-item">
+                        <div class="col-xs-offset-1 col-xs-6"><span class="extra-name">Wellness massage</span>
+                        </div>
+                        <div><span class="price">156,00 &euro;</span></div>
                     </div>
-                    <div><span class="price">156,00 &euro;</span></div>
                 </div>
                 <div class="clearfix total"><span class="summary-label col-xs-5">Gesamtbtrang</span><span class="price">706,00 &euro;</span>
                 </div>
