@@ -345,14 +345,24 @@
 .service-board .ui-state-active span.price{
     display:none;
 }
-.extra-price{
+
+@media (max-width: 1199px) {
+    .extra-price {
+        width: 20%;
+    }
+}
+@media (min-width: 1200px) {
+    .extra-price {
+        width: 30%;
+    }
+}
+.extra-price {
     position: absolute;
     z-index: 10;
     right: 0;
     color: #C62828;
     background-color: #fff;;
     padding: .5em;
-    width: 20%;
     text-align: center;
     font-weight: bold;
 }

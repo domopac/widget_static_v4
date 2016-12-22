@@ -134,14 +134,3 @@
         </div>
     </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', active, false);
-    function active() {
-        $(document).ready(function () {
-            $("a[href='#total']").click();
-            $(".bb.total").click();
-            summaryUpdate();
-        })
-    }
-</script>
