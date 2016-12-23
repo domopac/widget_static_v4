@@ -145,6 +145,16 @@ and open the template in the editor.
 
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', active, false);
+    function active() {
+        $(document).ready(function () {
+            //$("a[href='#total']").click();
+            $(".bb.total").click();
+            summaryUpdate();
+        })
+    }
+</script>
 
 </body>
 
