@@ -336,7 +336,9 @@ function boardConfirmed($room) {
     $("a[href='#service']").click();
     $("#service .jumbotron.room").hide()
     $("#"+$room.attr("data-room")).show();
-    $("#"+$room.attr("data-room")+" ."+$room.attr("data-board")).click();
+    if (!$("#"+$room.attr("data-room")+" ."+$room.attr("data-board")).hasClass("ui-state-active")) {
+        $("#" + $room.attr("data-room") + " ." + $room.attr("data-board")).click();
+    }
 }
 function serviceConfirmed($serviceRoom) {
     $("a[href='#total']").parent().removeClass('disabled');
