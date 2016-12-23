@@ -227,6 +227,10 @@
     margin-bottom: 10px;
 }
 
+.room_alert .material-icons{
+    font-size: 14px;
+}
+
 .room_alert {
     color:#C62828;
     font-size: 14px;
